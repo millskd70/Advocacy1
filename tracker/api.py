@@ -98,14 +98,20 @@ class KansasLegAPI:
                 break
             items = pick(data, "results", "content", default=None)
             if items is None:
-                # A single object rather than a list
-                out.append(data)
+                if isinstance(data, dict) and ("count" in data or "results" in data):
+                    break  # an empty page
+                out.append(data)  # a single object rather than a list
                 break
             out.extend(items if isinstance(items, list) else [items])
             nxt = data.get("next") if isinstance(data, dict) else None
-            if not nxt:
+            nxt_offset = data.get("next_offset") if isinstance(data, dict) else None
+            if nxt:
+                data = self.get(nxt)
+            elif nxt_offset not in (None, ""):
+                params["offset"] = nxt_offset
+                data = self.get(path, params)
+            else:
                 break
-            data = self.get(nxt)
         return out
 
     # ------------------------------------------------------------ endpoints
@@ -129,13 +135,15 @@ class KansasLegAPI:
             return []
         if isinstance(data, list):
             return data
-        items = pick(data, "results", "content", "bills", default=[])
-        if isinstance(items, dict):  # grouped by type
-            items = pick(items, "bills", default=[])
+        # Live shape: {"q": ..., "bills": {"count": n, "results": [{"number": "SB212", ...}]}}
+        items = pick(data, "bills", "results", "content", default=[])
+        if isinstance(items, dict):
+            items = pick(items, "results", "bills", default=[])
         return items if isinstance(items, list) else []
 
     def hearings(self, date_from: str, date_to: str) -> list[dict]:
-        return self.get_all("hearings/", {"from": date_from, "to": date_to, "limit": 500})
+        # Live shape: {"count", "next_offset", "previous_offset", "results": [...]}
+        return self.get_all("hearings/", {"from": date_from, "to": date_to, "limit": 500, "offset": 0})
 
     def hearing_detail(self, slug: str) -> dict | None:
         return self.get(f"hearings/{slug}/")

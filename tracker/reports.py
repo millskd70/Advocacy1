@@ -17,19 +17,27 @@ def _hearing_line(h: dict) -> str:
     bills = ", ".join(h.get("bills") or [])
     desc = (h.get("description") or "").strip()
     bills = f" — {bills}" if bills else (f" — {desc[:140]}" if desc else "")
-    return f"- **{when}** · {h.get('committee') or h.get('chamber') or 'Committee'}{where}{bills}"
+    status = f" **({h['status']})**" if h.get("status") else ""
+    titles = "; ".join(f"{d['name']}: {d['title'][:90]}" for d in h.get("bill_details", []))
+    if titles:
+        bills = f" — {titles}"
+    return f"- **{when}** · {h.get('committee') or h.get('chamber') or 'Committee'}{where}{status}{bills}"
 
 
 def scan_update(today: str, mode: str, site_url: str | None, new_bills: list[dict],
                 changed: list[tuple[dict, list[dict]]], new_hearings: list[dict],
-                upcoming: list[dict], total: int) -> str:
+                upcoming: list[dict], total: int, settings_changed: bool = False) -> str:
     lines = [f"# Kansas legislation scan — {today}", "",
              f"Scan type: **{mode}** · Tracked items: **{total}**", ""]
     if site_url:
         lines += [f"Full filterable list: {site_url}", ""]
     if not (new_bills or changed or new_hearings):
         lines += ["No new or changed items since the last scan.", ""]
-    if new_bills:
+    if new_bills and settings_changed:
+        lines += [f"## Now tracked because your keywords or settings changed ({len(new_bills)})", "",
+                  "_These aren't necessarily new bills; they match the updated keyword list._", ""]
+        lines += [_bill_line(b) for b in new_bills] + [""]
+    elif new_bills:
         lines += [f"## New bills & resolutions ({len(new_bills)})", ""]
         lines += [_bill_line(b) for b in new_bills] + [""]
     if changed:

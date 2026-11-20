@@ -48,6 +48,9 @@ def fixtures_day1():
                  "AN ACT concerning taxation; relating to the research and development activities credit."),  # no history -> detail fetch
             bill("HB2300", "Concerning motor vehicle registration fees",
                  "AN ACT concerning motor vehicles; relating to registration fees."),
+            bill("SB175", "Creating workforce development grants for advanced manufacturing and biology programs",
+                 "AN ACT concerning economic development; relating to workforce training.",
+                 history=[hist("2026-01-29", "Senate", "Introduced", "intro_ibc_157")]),
             bill("SB120", "Matters of conscience for health care providers",
                  "AN ACT concerning health care; relating to conscience protections."),  # must NOT match "science"
         ]},
@@ -55,12 +58,23 @@ def fixtures_day1():
             "AN ACT concerning taxation; relating to the research and development activities credit.",
             history=[hist("2026-01-26", "Senate", "Introduced", "intro_ibc_157"),
                      hist("2026-01-27", "Senate", "Referred to Committee on Commerce", "ref_rbc_308")])]},
-        "search__q=biomanufacturing.json": {"count": 1, "results": [
-            {"bill_no": "HB2300", "title": "HB 2300", "snippet": "…a biomanufacturing facility exemption…", "rank": 0.4}]},
-        "hearings.json": {"count": 1, "next": None, "results": [
-            {"je_slug": "sen-commerce-2026-02-03", "chamber": "senate", "committee": {"title": "Senate Commerce"},
-             "start_time": "2026-02-03T10:30:00", "room": "548-S",
-             "description": "Informational briefing: Kansas bioscience and biomanufacturing workforce", "bills": []}]},
+        # Live shapes (checked against the API in Nov 2026)
+        "search__q=biomanufacturing.json": {"q": "biomanufacturing", "biennium": "b2025_26", "bills": {"count": 1, "results": [
+            {"number": "HB2300", "type": "bill", "chamber": "House", "shorttitle": "Concerning motor vehicle registration fees",
+             "url": "/bills/HB2300/", "rank": 0.4, "match_snippet": "Concerning motor vehicle"}]}},
+        "hearings.json": {"count": 3, "next_offset": None, "previous_offset": None, "results": [
+            {"committee_kpid": "ctte_h_hhs_1", "committee_title": "Health and Human Services", "chamber": "House",
+             "hearing_date": "2026-02-04", "hearing_time": "1:30 PM", "hearing_datetime": "2026-02-04T13:30:00Z",
+             "room": "112-N", "status": "scheduled", "hearing_type": "Hearing on:", "bill_numbers": ["HB2201"],
+             "is_past": True, "streaming": "http://example.invalid/room112N"},
+            {"committee_kpid": "ctte_jt_it_1", "committee_title": "Joint Committee on Information Technology", "chamber": "Joint",
+             "hearing_date": "2026-02-05", "hearing_time": "9:00 AM", "hearing_datetime": "2026-02-05T09:00:00Z",
+             "room": "142-S", "status": "scheduled", "hearing_type": "Hearing on:", "bill_numbers": ["HB2300"],
+             "is_past": True, "streaming": ""},
+            {"committee_kpid": "ctte_h_tax_1", "committee_title": "Taxation", "chamber": "House",
+             "hearing_date": "2026-02-06", "hearing_time": "3:30 PM", "hearing_datetime": "2026-02-06T15:30:00Z",
+             "room": "346-S", "status": "scheduled", "hearing_type": "Hearing on:", "bill_numbers": ["HB2999"],
+             "is_past": True, "streaming": ""}]},
         "chamber_status.json": {"house": {"in_session": True}, "senate": {"in_session": True}},
     }
 
@@ -94,7 +108,7 @@ def main():
     run(root, "--today", "2026-02-02")
     data = json.loads((root / "docs/data/bills.json").read_text())
     nos = {b["bill_no"]: b for b in data["bills"]}
-    assert set(nos) == {"SB101", "HB2201", "HB2250", "SB150", "HB2300"}, set(nos)
+    assert set(nos) == {"SB101", "HB2201", "HB2250", "SB150", "HB2300", "SB175"}, set(nos)
     assert "SB120" not in nos, "conscience should not match science"
     assert nos["SB101"]["topics"] == ["Angel Investors"], nos["SB101"]["topics"]
     assert "R&D Tax Credits" in nos["SB150"]["topics"] and nos["SB150"]["history"], "detail fetch"
@@ -103,7 +117,14 @@ def main():
     assert nos["HB2300"]["match_sources"] == ["Bill text"]
     assert nos["HB2201"]["stage"] == "Hearing held/scheduled", nos["HB2201"]["stage"]
     hear = json.loads((root / "docs/data/hearings.json").read_text())["hearings"]
-    assert any("HB2201" in h["bills"] for h in hear) and any("bioscience" in h["description"] for h in hear)
+    h2201 = [h for h in hear if "HB2201" in h["bills"]]
+    assert len(h2201) == 1 and h2201[0]["source"] == "Hearing schedule" and h2201[0]["room"] == "112-N", h2201
+    assert h2201[0]["bill_details"][0]["title"].startswith("Establishing a prescription drug"), h2201
+    assert h2201[0]["committee"] == "House Health and Human Services"
+    it = [h for h in hear if "Information Technology" in h["committee"]]
+    assert it and "Technology" in it[0]["topics"], it
+    assert not any("HB2999" in h["bills"] for h in hear), "untracked bill in non-matching committee"
+    assert nos["SB175"]["topics"] == ["Science", "Workforce Development", "Advanced Manufacturing"], nos["SB175"]["topics"]
     assert (root / "out/issue_update_title.txt").exists()
 
     # ---- Day 2: SB101 passes the Senate, a new bill appears
@@ -121,6 +142,18 @@ def main():
     data = json.loads((root / "docs/data/bills.json").read_text())
     sb101 = next(b for b in data["bills"] if b["bill_no"] == "SB101")
     assert sb101["last_changed"] == "2026-02-12" and sb101["first_seen"] == "2026-02-02"
+
+    # ---- Keyword change: new matches are labeled as such, not as new bills
+    shutil.rmtree(root / "out", ignore_errors=True)
+    cfgp = root / "config.yml"
+    cfgp.write_text(cfgp.read_text().replace("    - quantum\n", "    - quantum\n    - registration fees\n"))
+    fx["bill_status.json"]["results"].append(bill("HB2420", "Changing motor vehicle registration fees",
+        "AN ACT concerning motor vehicles.", history=[hist("2026-02-12", "House", "Introduced", "intro_ibc_157")]))
+    write_fx(root, fx)
+    run(root, "--today", "2026-02-13")
+    upd = (root / "reports/updates/2026-02-13.md").read_text()
+    assert "Now tracked because your keywords" in upd and "HB2420" in upd, upd
+    assert "keywords" in (root / "out/issue_update_title.txt").read_text()
 
     # ---- Out of session, not a Monday: nothing happens. Monday: weekly scan.
     shutil.rmtree(root / "out", ignore_errors=True)

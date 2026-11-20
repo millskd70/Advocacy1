@@ -173,6 +173,9 @@ def hearings_from_history(rec: dict) -> list[dict]:
             for c in reversed(rec.get("committees") or []):
                 committee = c
                 break
+        chamber = h.get("chamber") or rec["chamber"]
+        if committee and not committee.lower().startswith(chamber.lower()):
+            committee = f"{chamber} {committee}"
         out.append({
             "date": date or h["date"],
             "time": time_,
@@ -188,42 +191,54 @@ def hearings_from_history(rec: dict) -> list[dict]:
 
 
 def normalize_hearing(raw: dict) -> dict:
-    committee = pick(raw, "committee", "committee_name", "committee_title", default="")
+    """A row from /api/v1/hearings/. Live shape (Nov 2026): committee_kpid, committee_title,
+    chamber, hearing_date, hearing_time, hearing_datetime, room, status, hearing_type,
+    bill_numbers, is_past, streaming."""
+    committee = pick(raw, "committee_title", "committee", "committee_name", default="")
     if isinstance(committee, dict):
         committee = pick(committee, "title", "display_name", "name", default="")
-    bills_raw = pick(raw, "bills", "measures", "bills_under_consideration", default=[])
+    chamber = str(pick(raw, "chamber", default="")).title()
+    bills_raw = pick(raw, "bill_numbers", "bills", "measures", default=[])
     bills = []
     for b in bills_raw if isinstance(bills_raw, list) else [bills_raw]:
         s = b if isinstance(b, str) else iter_text(*(v for v in (b.values() if isinstance(b, dict) else []) if isinstance(v, str)))
         no = canon_bill_no(s)
         if no and no not in bills:
             bills.append(no)
-    desc = str(pick(raw, "description", "status", "text", "title", "topic", "subject", default=""))
+    htype = str(pick(raw, "hearing_type", default="")).strip()
+    desc = str(pick(raw, "description", "text", "title", "topic", "subject", default=""))
     for m in BILL_RE.finditer(desc):
         no = canon_bill_no(m.group(0))
         if no and no not in bills:
             bills.append(no)
-    start = str(pick(raw, "start_time", "start", "occurred", "datetime", "date", "hearing_date", default=""))
+    start = str(pick(raw, "hearing_date", "date", "start_time", "start", "hearing_datetime", "occurred", default=""))
     date = start[:10] if re.match(r"\d{4}-\d{2}-\d{2}", start) else _parse_when(desc)[0]
-    time_ = ""
-    m = re.match(r"\d{4}-\d{2}-\d{2}[T ](\d{2}):(\d{2})", start)
-    if m:
-        hh, mm = int(m.group(1)), m.group(2)
-        time_ = f"{(hh % 12) or 12}:{mm} {'PM' if hh >= 12 else 'AM'}"
-    else:
-        time_ = _parse_when(desc)[1]
-    slug = pick(raw, "je_slug", "slug", "id")
+    time_ = str(pick(raw, "hearing_time", default=""))
+    if not time_:
+        m = re.match(r"\d{4}-\d{2}-\d{2}[T ](\d{2}):(\d{2})", str(pick(raw, "start_time", "start", default="")))
+        if m:
+            hh, mm = int(m.group(1)), m.group(2)
+            time_ = f"{(hh % 12) or 12}:{mm} {'PM' if hh >= 12 else 'AM'}"
+        else:
+            time_ = _parse_when(desc)[1]
+    if committee and chamber and not str(committee).lower().startswith(chamber.lower()):
+        committee = f"{chamber} {committee}"
+    status = str(pick(raw, "status", default="")).strip().lower()
+    if not desc:
+        desc = (htype.rstrip(":") or "Hearing") + (f" {', '.join(bills)}" if bills else "")
     return {
         "date": date,
         "time": time_,
         "room": str(pick(raw, "room", "location", default="") or _parse_when(desc)[2]),
-        "chamber": str(pick(raw, "chamber", default="")).title(),
+        "chamber": chamber,
         "committee": str(committee),
+        "committee_kpid": str(pick(raw, "committee_kpid", default="")),
         "description": desc,
+        "status": "Cancelled" if "cancel" in status else ("" if status in ("", "scheduled") else status.title()),
         "bills": bills,
         "source": "Hearing schedule",
-        "slug": slug,
-        "url": str(pick(raw, "url", "stream_url", default="")) or "https://www.kslegislature.gov/li/",
+        "stream_url": str(pick(raw, "streaming", "stream_url", default="")),
+        "url": str(pick(raw, "url", default="")) or "",
     }
 
 

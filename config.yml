@@ -5,8 +5,10 @@
 # ---------------------------------------------------------------
 
 # Topics shown as checkboxes on the web page.
-# A bill, resolution or hearing is tracked if its title (or, when
-# full-text search is on, its text) contains ANY keyword for ANY topic.
+# A bill or resolution is tracked if its title (or, when full-text
+# search is on, its text) contains ANY keyword for ANY topic.
+# A hearing is tracked if it is on a tracked bill, or if the committee
+# name or hearing description contains a keyword.
 # Keywords are case-insensitive and match whole words/phrases only
 # ("science" will not match "conscience").
 topics:
@@ -18,6 +20,7 @@ topics:
     - research university
     - research universities
     - quantum
+    - biology
   Technology:
     - technology
     - technologies
@@ -90,6 +93,12 @@ topics:
     - upper payment limit
     - upper payment limits
 
+  Workforce Development:
+    - workforce
+    - workforce development
+  Advanced Manufacturing:
+    - advanced manufacturing
+
 # Words that, if present, mean a match should be ignored (optional).
 # Example: add "information technology services" if agency IT budget
 # bills are cluttering your list.
@@ -114,8 +123,8 @@ weekly_scan_day: 0
 # a special session) also switches to daily scans automatically.
 session_end: "05-31"
 
-# How many days of past/future hearings to look at on each scan.
-hearings_lookback_days: 14
+# Each scan collects every hearing from the start of the current
+# two-year session through this many days ahead.
 hearings_lookahead_days: 30
 
 # Open a GitHub Issue (which GitHub emails to you) when a scan finds
