@@ -111,6 +111,32 @@
   .hcard .why { color: var(--muted); font-size: 12px; margin-top: 4px; }
   .tag-cancel { background: #fbe4dc; color: var(--warn); font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 6px; margin-left: 6px; }
   .live { font-size: 12.5px; margin-left: 8px; color: var(--brand-2); }
+  .btn.report { background: var(--brand); border-color: var(--brand); color: #fff; font-weight: 600; }
+  .btn.report:hover { background: var(--brand-2); }
+  .modal-bg { position: fixed; inset: 0; background: rgba(15,25,40,.45); z-index: 100; display: none; align-items: center; justify-content: center; padding: 16px; }
+  .modal-bg.open { display: flex; }
+  .modal { background: #fff; border-radius: 12px; width: 680px; max-width: 100%; max-height: calc(100vh - 32px); display: flex; flex-direction: column;
+           box-shadow: 0 20px 60px rgba(10,20,40,.3); }
+  .modal header { background: none; color: var(--ink); padding: 16px 18px 8px; display: flex; justify-content: space-between; align-items: center; }
+  .modal header h2 { margin: 0; font-size: 18px; color: var(--brand); }
+  .modal .x { border: 0; background: none; font-size: 22px; cursor: pointer; color: var(--muted); line-height: 1; }
+  .modal .body { padding: 4px 18px 8px; overflow: auto; }
+  .modal label.f { display: block; font-size: 13px; color: var(--muted); margin: 8px 0 4px; font-weight: 600; }
+  .modal input[type=text], .modal input[type=search] { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
+  .picker-tools { display: flex; gap: 8px; align-items: center; margin: 8px 0 6px; flex-wrap: wrap; }
+  .picker-tools .n { margin-left: auto; font-size: 13px; color: var(--brand); font-weight: 600; }
+  .picker { border: 1px solid var(--line); border-radius: 8px; max-height: 300px; overflow: auto; }
+  .picker label { display: grid; grid-template-columns: 22px 78px 1fr; gap: 8px; align-items: start; padding: 7px 10px; border-bottom: 1px solid #eef1f5; cursor: pointer; font-size: 14px; }
+  .picker label:hover { background: #f6f9fd; }
+  .picker label b { color: var(--brand); }
+  .picker label .s { display: block; color: var(--muted); font-size: 12px; }
+  .picker input { width: 17px; height: 17px; accent-color: var(--brand-2); margin-top: 1px; }
+  .opts { display: flex; gap: 16px; flex-wrap: wrap; margin: 10px 0 2px; font-size: 14px; }
+  .opts input { accent-color: var(--brand-2); width: 16px; height: 16px; vertical-align: -3px; margin-right: 4px; }
+  .modal footer { margin: 0; padding: 12px 18px 16px; display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; border-top: 1px solid var(--line); }
+  .modal .hint { font-size: 12.5px; color: var(--muted); flex: 1 1 100%; }
+  .modal footer .btn { flex: 0 0 auto; }
+  @media (max-width: 760px) { .modal footer .btn { flex: 1 1 100%; } .modal-bg { padding: 8px; } }
   footer { color: var(--muted); font-size: 12.5px; margin-top: 18px; }
   footer a { color: var(--brand-2); }
   .mobile-sort { display: none; }
@@ -163,6 +189,7 @@
         <option value="bill_no:asc">Bill number</option>
         <option value="stage:asc">Stage</option>
       </select>
+      <button class="btn report" id="buildreport" title="Pick bills and resolutions and download a summary report">Build report</button>
       <button class="btn excel" id="export" title="Download the bills shown (or the ones you've checked) as an Excel file">Export to Excel</button>
     </div>
     <div class="filters" id="filterbar">
@@ -218,6 +245,36 @@
   <footer id="foot"></footer>
 </main>
 
+<div class="modal-bg" id="rmodal" role="dialog" aria-modal="true" aria-labelledby="rtitle-h">
+  <div class="modal">
+    <header><h2 id="rtitle-h">Build report</h2><button class="x" id="rclose" aria-label="Close">×</button></header>
+    <div class="body">
+      <label class="f" for="rtitle">Report title</label>
+      <input type="text" id="rtitle" value="Kansas Legislation Report">
+      <label class="f">Choose bills and resolutions</label>
+      <input type="search" id="rq" placeholder="Search by number, title, topic, sponsor…">
+      <div class="picker-tools">
+        <button class="btn" id="rall">Select all shown</button>
+        <button class="btn link" id="rnone">Clear</button>
+        <label style="font-size:13px"><input type="checkbox" id="ronly"> Show selected only</label>
+        <span class="n" id="rcount"></span>
+      </div>
+      <div class="picker" id="rlist"></div>
+      <label class="f">Include</label>
+      <div class="opts">
+        <label><input type="checkbox" id="o-votes" checked>Votes</label>
+        <label><input type="checkbox" id="o-hearings" checked>Hearings</label>
+        <label><input type="checkbox" id="o-history" checked>Full action history</label>
+      </div>
+    </div>
+    <footer>
+      <span class="hint">Every report includes status, sponsors and the run date.</span>
+      <button class="btn" id="rpdf">Print / Save as PDF</button>
+      <button class="btn report" id="rdocx">Download Word report</button>
+    </footer>
+  </div>
+</div>
+
 <div class="pop" id="pop">
   <div class="ph" id="pop-title"></div>
   <div class="ps"><input id="pop-search" type="search" placeholder="Search values…"></div>
@@ -229,6 +286,7 @@
 </div>
 
 <script src="xlsx-writer.js"></script>
+<script src="report.js"></script>
 <script>
 (() => {
   const $ = s => document.querySelector(s);
@@ -355,6 +413,7 @@
         <h4>Full title</h4><div>${esc(b.long_title || b.short_title)}</div>
         <h4>Sponsors</h4><div>${esc((b.sponsors||[]).join("; ") || "—")}</div>
         <h4>Committees</h4><div>${esc((b.committees||[]).join("; ") || "—")}</div>
+        ${(b.votes||[]).length ? `<h4>Votes</h4><div>${b.votes.map(v => `${esc(fmtDate(v.date))} · ${esc(v.chamber)} · ${esc(v.action || v.motion || "Roll call")}: <b>${v.yea}–${v.nay}</b>`).join("<br>")}</div>` : ""}
         <h4>Why it's tracked</h4><div>Keywords: ${esc((b.matched_keywords||[]).join(", "))} · Found in: ${esc((b.match_sources||[]).join(", "))}</div>
         <h4>Links</h4><div><a href="${esc(b.url)}" target="_blank" rel="noopener">Official bill page (text, fiscal note, testimony) ↗</a></div>
       </div>
@@ -442,6 +501,55 @@
       columns: [{header: "Bill", width: 12}, {header: "Date", type: "date", width: 13}, {header: "Chamber", width: 10},
                 {header: "Action", type: "wrap", width: 90}] };
     XlsxWriter.download(XlsxWriter.build([bills, hearings, history]), `KS-legislation-${today10()}.xlsx`);
+  });
+
+  // ---------------------------------------------------------------- build report
+  let rsel = new Set();
+  const rmodal = $("#rmodal");
+  function rList() {
+    const q = $("#rq").value.toLowerCase().split(/\s+/).filter(Boolean);
+    const only = $("#ronly").checked;
+    const list = sorted(BILLS).filter(b => (!only || rsel.has(b.bill_no)) && q.every(w => b._search.includes(w)));
+    $("#rlist").innerHTML = list.map(b => `<label><input type="checkbox" value="${esc(b.bill_no)}" ${rsel.has(b.bill_no) ? "checked" : ""}>
+      <b>${esc(b.name)}</b><span>${esc(trunc(b.short_title || b.long_title, 140))}<span class="s">${esc(b.stage)} · ${esc((b.topics || []).join(", "))}</span></span></label>`).join("")
+      || `<div class="empty" style="padding:20px">No matches.</div>`;
+    $("#rcount").textContent = `${rsel.size} selected`;
+    $("#rdocx").disabled = $("#rpdf").disabled = rsel.size === 0;
+    return list;
+  }
+  $("#buildreport").addEventListener("click", () => {
+    // Start from the bills checked in the table, or from what's currently shown when nothing is checked
+    rsel = new Set(state.sel.length ? state.sel : []);
+    $("#rq").value = ""; $("#ronly").checked = rsel.size > 0;
+    rList(); rmodal.classList.add("open"); setTimeout(() => $("#rq").focus(), 50);
+  });
+  const rClose = () => rmodal.classList.remove("open");
+  $("#rclose").addEventListener("click", rClose);
+  rmodal.addEventListener("click", e => { if (e.target === rmodal) rClose(); });
+  $("#rq").addEventListener("input", rList);
+  $("#ronly").addEventListener("change", rList);
+  $("#rlist").addEventListener("change", e => { const c = e.target; if (c.value) { c.checked ? rsel.add(c.value) : rsel.delete(c.value); rList(); } });
+  $("#rall").addEventListener("click", () => { $$("#rlist input").forEach(c => rsel.add(c.value)); rList(); });
+  $("#rnone").addEventListener("click", () => { rsel.clear(); $("#ronly").checked = false; rList(); });
+  function reportModel() {
+    const bills = sorted(BILLS.filter(b => rsel.has(b.bill_no)));
+    state.sel = [...rsel]; save(); renderBills();   // keep the table's checkboxes in step
+    return ReportBuilder.model(bills, HEARINGS, META, {
+      title: $("#rtitle").value.trim() || "Kansas Legislation Report",
+      votes: $("#o-votes").checked, hearings: $("#o-hearings").checked, history: $("#o-history").checked });
+  }
+  const fileSafe = s => s.replace(/[^\w\- ]+/g, "").trim().replace(/\s+/g, "-").slice(0, 60) || "report";
+  $("#rdocx").addEventListener("click", () => {
+    if (!rsel.size) return;
+    const m = reportModel();
+    XlsxWriter.download(ReportBuilder.docx(m), `${fileSafe(m.title)}-${today10()}.docx`);
+  });
+  $("#rpdf").addEventListener("click", () => {
+    if (!rsel.size) return;
+    const w = window.open("", "_blank");
+    const html = ReportBuilder.html(reportModel());
+    if (w) { w.document.open(); w.document.write(html); w.document.close(); }
+    else { XlsxWriter.download(new Blob([html], {type: "text/html"}), `report-${today10()}.html`); }
   });
 
   // ---------------------------------------------------------------- hearings
@@ -556,7 +664,7 @@
     if (b) { e.stopPropagation(); const h = !!b.dataset.hfilter; openFilter(b, b.dataset.filter || b.dataset.hfilter, h); return; }
     if (pop.classList.contains("open") && !pop.contains(e.target)) closePop();
   });
-  document.addEventListener("keydown", e => { if (e.key === "Escape") closePop(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") { closePop(); rmodal.classList.remove("open"); } });
 })();
 </script>
 </body>

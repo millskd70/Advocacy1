@@ -129,6 +129,12 @@ class KansasLegAPI:
             return data[0]
         return None
 
+    def votes(self, bill_no: str) -> list[dict]:
+        """Roll calls for one bill. Live shape: {count, next, previous, results: [{bill_no, chamber,
+        rcs_num, session_day, motion, tally: {yea, nay, present, absent, not_voting}, occurred,
+        journal_element: {action_code, action_label, occurred, page_number, chamber}}]}"""
+        return self.get_all("votes/", {"bill_no": bill_no.upper()})
+
     def search_bills(self, query: str) -> list[dict]:
         data = self.get("search/", {"q": query, "type": "bills"})
         if data is None:
@@ -165,6 +171,8 @@ class KansasLegAPI:
         candidates = []
         if q:
             candidates.append(f"{name}__q={q.lower().replace(' ', '_')}.json")
+        if params.get("bill_no"):
+            candidates.append(f"{name}__bill_no={str(params['bill_no']).lower()}.json")
         candidates.append(f"{name}.json")
         for c in candidates:
             p = self.fixtures_dir / c

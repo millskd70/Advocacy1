@@ -8,6 +8,7 @@ Automatically tracks Kansas bills, resolutions and committee hearings on the top
 - **A monthly summary report** for each month the Legislature is in session
 - **Hearings related to your keywords**: every hearing on a tracked bill, plus hearings in committees whose names match a keyword, with date, time, room and a live-video link
 - **A web page with filters**: topic checkboxes, Excel-style column filters, keyword search and sorting
+- **Build report**: pick any set of bills and resolutions and download a Word report (or print/save as PDF) with each one's status, sponsors, votes, hearings and history, plus the report run date
 - **One-click Excel export** of the bills you're viewing (or just the ones you check), with their hearings and full action history
 - **Email alerts** through GitHub Issues whenever something is new or changes
 
@@ -49,6 +50,7 @@ Without a key the scanner works but runs slowly (the Legislature limits anonymou
 | Browse and filter tracked bills | Your GitHub Pages web page |
 | See what changed today | The latest Issue, or `reports/latest-update.md` |
 | Monthly report | An Issue on the 1st of each month after an in-session month; also `reports/monthly/` |
+| A report on specific bills | **Build report** on the web page → pick bills → **Download Word report** or **Print / Save as PDF** |
 | Excel spreadsheet | **Export to Excel** on the web page. It exports the bills currently shown, or only the ones you've checked. |
 | Excel list of hearings | **Hearings** tab → **Export to Excel** (exports the hearings currently shown) |
 | Run a scan right now | **Actions → Kansas legislation scan → Run workflow** |
@@ -62,6 +64,7 @@ Without a key the scanner works but runs slowly (the Legislature limits anonymou
 - Tap any row to see its full title, sponsors, why it's tracked, and its complete history.
 - **Check the box** on any rows to pick specific bills, then tap **Export … selected to Excel**. The box in the header selects everything shown. With nothing checked, the export includes every bill shown under your current filters.
 - The Excel file has three tabs: **Bills** (with clickable links), **Hearings** on those bills, and the **Action history** for each. Each tab has filter buttons and a frozen header row.
+- **Build report:** tap **Build report**, search and check the bills or resolutions you want (anything already checked in the table is pre-selected), give the report a title, and choose whether to include votes, hearings and full action history. **Download Word report** saves an editable .docx. **Print / Save as PDF** opens a print-ready version. Every report shows the run date, a summary table, and for each measure its status, last action, original sponsor, sponsors, committees, roll-call votes (yea/nay/other), hearings and complete history.
 - **Hearings tab:** filter by topic, committee or *Matched by* (a tracked bill vs. the committee name). Upcoming hearings include a *Watch live* link.
 - Your filters are remembered on each device.
 

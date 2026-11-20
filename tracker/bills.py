@@ -107,6 +107,10 @@ def normalize_bill(raw: dict, biennium: str) -> dict | None:
     if isinstance(sponsors, str):
         sponsors = [sponsors]
     sponsors = [s if isinstance(s, str) else str(pick(s, "name", "full_name", default=s)) for s in sponsors]
+    original = pick(raw, "ORIGINAL_SPONSOR", "original_sponsor", default=[])
+    if isinstance(original, str):
+        original = [original]
+    original = [o if isinstance(o, str) else str(pick(o, "name", "full_name", default=o)) for o in original]
     prefix = bill_prefix(bill_no)
     rec = {
         "bill_no": bill_no,
@@ -118,6 +122,7 @@ def normalize_bill(raw: dict, biennium: str) -> dict | None:
         "long_title": str(pick(raw, "LONGTITLE", "long_title", default="")).strip(),
         "raw_status": str(pick(raw, "STATUS", "status", default="")),
         "sponsors": sponsors,
+        "original_sponsor": original,
         "history": history,
         "has_history": bool(history),
         "url": bill_url(bill_no, biennium),
@@ -247,3 +252,32 @@ def hearing_key(h: dict) -> str:
     if bills:
         return f"{h.get('date')}|{bills}"
     return f"{h.get('date')}|{(h.get('committee') or '').lower()}|{(h.get('description') or '')[:60].lower()}"
+
+
+VOTE_ACTION_RE = re.compile(r"yea|final action|adopted|concurred|nonconcurred|overrid|motion to|passed", re.IGNORECASE)
+
+
+def has_floor_votes(rec: dict) -> bool:
+    """Only bills with floor action can have roll calls; skip the rest to save API calls."""
+    return any(VOTE_ACTION_RE.search(h["action"]) for h in rec.get("history", []))
+
+
+def normalize_vote(raw: dict) -> dict:
+    tally = pick(raw, "tally", default={}) or {}
+    je = pick(raw, "journal_element", default={}) or {}
+    occurred = str(pick(raw, "occurred", default="") or pick(je, "occurred", default=""))
+    def n(k):
+        try:
+            return int(tally.get(k) or 0)
+        except (TypeError, ValueError):
+            return 0
+    return {
+        "date": occurred[:10],
+        "chamber": str(pick(raw, "chamber", default="") or pick(je, "chamber", default="")).title(),
+        "motion": str(pick(raw, "motion", default="")).strip(),
+        "action": str(pick(je, "action_label", default="")).strip().rstrip(";"),
+        "yea": n("yea"), "nay": n("nay"), "present": n("present"),
+        "absent": n("absent"), "not_voting": n("not_voting"),
+        "rcs_num": str(pick(raw, "rcs_num", default="")),
+        "journal_page": pick(je, "page_number", default=None),
+    }

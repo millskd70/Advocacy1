@@ -196,5 +196,5 @@ ${sheets.map((_, i) => `<Relationship Id="rId${i + 1}" Type="http://schemas.open
     setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
   }
 
-  global.XlsxWriter = { build, download };
+  global.XlsxWriter = { build, download, zip };
 })(window);

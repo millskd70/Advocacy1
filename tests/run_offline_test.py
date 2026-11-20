@@ -23,7 +23,8 @@ def hist(date, chamber, action, code=""):
 
 def bill(no, short, long_, status="introduced", history=None, sponsors=None):
     d = {"BILLNO": no, "NAME": no, "SHORTTITLE": short, "LONGTITLE": long_, "STATUS": status,
-         "SPONSOR_NAMES": sponsors or ["Committee on Commerce, Labor and Economic Development"]}
+         "SPONSOR_NAMES": sponsors or ["Committee on Commerce, Labor and Economic Development"],
+         "ORIGINAL_SPONSOR": ["Committee on Commerce, Labor and Economic Development"]}
     if history is not None:
         d["HISTORY"] = history
     return d
@@ -75,6 +76,12 @@ def fixtures_day1():
              "hearing_date": "2026-02-06", "hearing_time": "3:30 PM", "hearing_datetime": "2026-02-06T15:30:00Z",
              "room": "346-S", "status": "scheduled", "hearing_type": "Hearing on:", "bill_numbers": ["HB2999"],
              "is_past": True, "streaming": ""}]},
+        "votes__bill_no=sb101.json": {"count": 1, "next": None, "previous": None, "results": [
+            {"apn": "x", "bill_no": "SB101", "chamber": "senate", "rcs_num": "120", "session_day": "22",
+             "motion": "Final Action", "tally": {"yea": 38, "nay": 2, "present": 0, "absent": 0, "not_voting": 0},
+             "occurred": "2026-02-12T15:00:00Z",
+             "journal_element": {"action_code": "fa_fabc_340", "action_label": "Final Action - Passed;",
+                                 "occurred": "2026-02-12T15:00:00+00:00", "page_number": 410, "chamber": "senate"}}]},
         "chamber_status.json": {"house": {"in_session": True}, "senate": {"in_session": True}},
     }
 
@@ -141,6 +148,8 @@ def main():
     assert "HB2410" in upd and "Status changes (1)" in upd and "Passed Senate" in upd, upd
     data = json.loads((root / "docs/data/bills.json").read_text())
     sb101 = next(b for b in data["bills"] if b["bill_no"] == "SB101")
+    assert sb101["votes"] and sb101["votes"][0]["yea"] == 38 and sb101["votes"][0]["action"] == "Final Action - Passed", sb101["votes"]
+    assert sb101["original_sponsor"] == [] or isinstance(sb101["original_sponsor"], list)
     assert sb101["last_changed"] == "2026-02-12" and sb101["first_seen"] == "2026-02-02"
 
     # ---- Keyword change: new matches are labeled as such, not as new bills
