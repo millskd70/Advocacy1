@@ -1,0 +1,123 @@
+# ---------------------------------------------------------------
+# Kansas Legislation Tracker — settings
+# Edit this file on GitHub to change what gets tracked.
+# Changes take effect on the next scheduled scan.
+# ---------------------------------------------------------------
+
+# Topics shown as checkboxes on the web page.
+# A bill, resolution or hearing is tracked if its title (or, when
+# full-text search is on, its text) contains ANY keyword for ANY topic.
+# Keywords are case-insensitive and match whole words/phrases only
+# ("science" will not match "conscience").
+topics:
+  Science:
+    - science
+    - sciences
+    - scientific
+    - STEM
+    - research university
+    - research universities
+    - quantum
+  Technology:
+    - technology
+    - technologies
+    - technological
+    - artificial intelligence
+    - semiconductor
+    - semiconductors
+    - cybersecurity
+    - data center
+    - data centers
+    - innovation
+  Angel Investors:
+    - angel investor
+    - angel investors
+    - angel investment
+    - angel investor tax credit
+    - venture capital
+    - seed capital
+    - startup
+    - startups
+    - start-up
+    - start-ups
+  R&D Tax Credits:
+    - research and development
+    - R&D
+    - research credit
+    - research tax credit
+    - research and development tax credit
+    - research and development activities
+  Biotechnology:
+    - biotechnology
+    - biotech
+    - biologics
+    - gene therapy
+    - bioengineering
+  Bioscience:
+    - bioscience
+    - biosciences
+    - life sciences
+    - bioscience authority
+    - animal health
+  Biomanufacturing:
+    - biomanufacturing
+    - bio-manufacturing
+    - pharmaceutical manufacturing
+    - drug manufacturing
+    - biologics manufacturing
+  Prescription Drug Pricing:
+    - prescription drug
+    - prescription drugs
+    - drug pricing
+    - drug price
+    - drug prices
+    - pharmacy benefit manager
+    - pharmacy benefit managers
+    - PBM
+    - PBMs
+    - insulin
+  "340B":
+    - 340B
+    - 340 B
+    - covered entity
+    - covered entities
+    - contract pharmacy
+    - contract pharmacies
+  Prescription Drug Affordability:
+    - prescription drug affordability
+    - drug affordability
+    - affordability board
+    - upper payment limit
+    - upper payment limits
+
+# Words that, if present, mean a match should be ignored (optional).
+# Example: add "information technology services" if agency IT budget
+# bills are cluttering your list.
+exclude_keywords: []
+
+# Also search the full text of bills (not just titles) using the
+# Legislature's search service. Finds more bills, including ones that
+# only mention a topic in passing. These are labeled "Bill text" on the
+# web page so you can filter them out.
+full_text_search: true
+
+# ---------------------------------------------------------------
+# Schedule
+# ---------------------------------------------------------------
+# The workflow runs every day. During session it scans every day.
+# Out of session it only scans on this weekday (Monday=0 ... Sunday=6).
+weekly_scan_day: 0
+
+# Session window (month-day). The Kansas Legislature convenes on the
+# second Monday of January; this window also covers veto session and
+# sine die. Any detected floor activity outside the window (for example
+# a special session) also switches to daily scans automatically.
+session_end: "05-31"
+
+# How many days of past/future hearings to look at on each scan.
+hearings_lookback_days: 14
+hearings_lookahead_days: 30
+
+# Open a GitHub Issue (which GitHub emails to you) when a scan finds
+# new or changed items, and for each monthly report.
+create_github_issues: true
