@@ -24,8 +24,8 @@ import yaml
 
 from . import reports
 from .api import KansasLegAPI, biennium_for, pick
-from .bills import (bill_text, canon_bill_no, finalize, hearing_key, hearings_from_history,
-                    normalize_bill, normalize_hearing)
+from .bills import (bill_text, canon_bill_no, finalize, has_floor_votes, hearing_key,
+                    hearings_from_history, normalize_bill, normalize_hearing, normalize_vote)
 from .matching import TopicMatcher
 from .session import in_session_window, month_was_in_session, recent_floor_activity
 
@@ -209,6 +209,30 @@ def main(argv=None) -> int:
         tracked.append(rec)
     print(f"  tracking {len(tracked)} measures")
 
+    # Roll-call votes: fetched once per bill and again only when its history changes.
+    vote_cache = load_json(DATA / "votes.json", {}) if prev_bills_doc else {}
+    fetched = 0
+    for rec in tracked:
+        no, sig = rec["bill_no"], f"{len(rec['history'])}|{rec['last_action_date']}"
+        cached = vote_cache.get(no)
+        if not has_floor_votes(rec):
+            rec["votes"] = []
+            continue
+        if cached and cached.get("sig") == sig:
+            rec["votes"] = cached.get("votes", [])
+            continue
+        try:
+            votes = [normalize_vote(v) for v in api.votes(no)]
+            votes.sort(key=lambda v: (v["date"], v["rcs_num"]))
+            vote_cache[no] = {"sig": sig, "votes": votes}
+            rec["votes"] = votes
+            fetched += 1
+        except Exception as e:
+            print(f"  votes unavailable for {no}: {e}")
+            rec["votes"] = (cached or {}).get("votes", [])
+    vote_cache = {k: v for k, v in vote_cache.items() if k in {b["bill_no"] for b in tracked}}
+    print(f"  votes: refreshed {fetched} bills")
+
     # Special-session detection outside the normal window
     if not in_window:
         active = recent_floor_activity(list(all_bills.values()), today)
@@ -328,6 +352,7 @@ def main(argv=None) -> int:
         "first_scan": state.get("first_scan", today_s),
         "in_session": in_session, "topics": topic_names, "count": len(tracked), "bills": tracked,
     })
+    write_json(DATA / "votes.json", vote_cache)
     write_json(DATA / "hearings.json", {"generated_at": now, "topics": topic_names,
                                         "hearings": hearing_list})
     with open(DATA / "tracked_bills.csv", "w", newline="") as f:
