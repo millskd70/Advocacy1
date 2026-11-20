@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import datetime as dt
 import json
 import os
@@ -167,7 +168,7 @@ def main(argv=None) -> int:
                     s = r
                 else:  # only look at identifying fields, never at snippets
                     s = json.dumps({k: v for k, v in r.items()
-                                    if any(x in k.lower() for x in ("bill", "name", "id", "url", "slug"))
+                                    if any(x in k.lower() for x in ("bill", "name", "id", "url", "slug", "number"))
                                     or k.lower() == "title"})
                 no = canon_bill_no(s)
                 if not no:
@@ -233,32 +234,66 @@ def main(argv=None) -> int:
         else:
             b["last_changed"] = old.get("last_changed", b["first_seen"])
     first_run = not prev
+    cfg_hash = hashlib.sha1(json.dumps([topics_cfg, cfg.get("exclude_keywords"), cfg.get("full_text_search", True),
+                                        "v2"], sort_keys=True, default=str).encode()).hexdigest()[:12]
+    settings_changed = bool(prev) and state.get("config_hash") != cfg_hash
+    state["config_hash"] = cfg_hash
 
     # ---------------------------------------------------- 5. hearings
-    tracked_nos = {b["bill_no"] for b in tracked}
+    # A hearing is tracked when it is on a tracked bill (title or text matched your keywords)
+    # or when the committee name or hearing description itself matches a keyword.
+    tracked_by_no = {b["bill_no"]: b for b in tracked}
+    lookup = dict(all_bills)
+    lookup.update(tracked_by_no)
+
+    def classify(h: dict) -> bool:
+        on_tracked = [x for x in h.get("bills", []) if x in tracked_by_no]
+        text_topics, text_kws = matcher.match(" ".join([h.get("description", ""), h.get("committee", "")]))
+        bill_topics = {t for x in on_tracked for t in tracked_by_no[x]["topics"]}
+        topics = [t for t in topic_names if t in set(text_topics) | bill_topics]
+        if not topics:
+            return False
+        kws = []
+        for x in on_tracked:
+            kws += [k for k in tracked_by_no[x]["matched_keywords"] if k not in kws]
+        kws += [k for k in text_kws if k not in kws]
+        h["topics"], h["matched_keywords"] = topics, kws
+        h["matched_by"] = (["Tracked bill"] if on_tracked else []) + (["Committee / description"] if text_topics else [])
+        h["bill_details"] = [{"bill_no": x, "name": lookup[x]["name"],
+                              "title": lookup[x]["short_title"] or lookup[x]["long_title"],
+                              "url": lookup[x]["url"], "tracked": x in tracked_by_no}
+                             for x in h.get("bills", []) if x in lookup]
+        if not h.get("url"):
+            if h["bill_details"]:
+                h["url"] = h["bill_details"][0]["url"]
+            elif h.get("committee_kpid"):
+                h["url"] = f"https://www.kslegislature.gov/li/{biennium}/committees/{h['committee_kpid']}/"
+            else:
+                h["url"] = f"https://www.kslegislature.gov/li/{biennium}/"
+        return True
+
     prev_hearings = {hearing_key(h): h for h in load_json(DATA / "hearings.json", {}).get("hearings", [])}
     hearings: dict[str, dict] = {}
     for b in tracked:
         for h in hearings_from_history(b):
-            h["topics"] = b["topics"]
-            hearings[hearing_key(h)] = h
-    frm = (today - dt.timedelta(days=int(cfg.get("hearings_lookback_days", 14)))).isoformat()
+            if classify(h):
+                hearings[hearing_key(h)] = h
+    # Whole biennium so far plus the look-ahead window (a few requests; the feed pages by 500)
+    frm = f"{biennium[1:5]}-01-01"
     to = (today + dt.timedelta(days=int(cfg.get("hearings_lookahead_days", 30)))).isoformat()
     schedule_ok = False
     try:
-        for raw in api.hearings(frm, to):
+        raw_hearings = api.hearings(frm, to)
+        print(f"  downloaded {len(raw_hearings)} scheduled hearings")
+        for raw in raw_hearings:
             h = normalize_hearing(raw)
-            on_tracked = [x for x in h["bills"] if x in tracked_nos]
-            text_topics, _ = matcher.match(" ".join([h["description"], h["committee"]]))
-            bill_topics = [t for b in tracked if b["bill_no"] in on_tracked for t in b["topics"]]
-            topics = [t for t in topic_names if t in set(text_topics) | set(bill_topics)]
-            if not topics:
+            if not h.get("date") or not classify(h):
                 continue
-            h["topics"] = topics
             k = hearing_key(h)
-            if k in hearings:  # merge: schedule data is richer
+            if k in hearings:  # merge with the bill-history copy; schedule data is richer
                 merged = dict(hearings[k])
                 merged.update({kk: vv for kk, vv in h.items() if vv})
+                merged["source"] = "Hearing schedule"
                 hearings[k] = merged
             else:
                 hearings[k] = h
@@ -266,17 +301,18 @@ def main(argv=None) -> int:
     except Exception as e:
         print(f"  hearing schedule unavailable ({e}); using bill histories only")
 
-    for k, h in prev_hearings.items():  # keep the record of earlier hearings
+    for k, h in prev_hearings.items():  # keep earlier hearings that are still relevant
         if k in hearings:
             continue
         dropped_from_schedule = (schedule_ok and h.get("source") == "Hearing schedule"
                                  and (h.get("date") or "") >= today_s)
-        if not dropped_from_schedule:  # future hearings that vanished were likely cancelled
+        if not dropped_from_schedule and classify(h):  # vanished future hearings were likely cancelled
             hearings[k] = h
     new_hearings = []
+    recent_cut = (today - dt.timedelta(days=1)).isoformat()
     for k, h in hearings.items():
         h["first_seen"] = prev_hearings.get(k, {}).get("first_seen", today_s)
-        if k not in prev_hearings and not first_run:
+        if k not in prev_hearings and not first_run and (h.get("date") or "") >= recent_cut:
             new_hearings.append(h)
     hearing_list = sorted(hearings.values(), key=lambda h: (h.get("date") or "", h.get("time") or ""))
     upcoming = [h for h in hearing_list if (h.get("date") or "") >= today_s][:25]
@@ -305,7 +341,7 @@ def main(argv=None) -> int:
                         "; ".join(b["match_sources"]), b["url"]])
 
     update_md = reports.scan_update(today_s, mode, url, new_bills, changed, new_hearings,
-                                    upcoming, len(tracked))
+                                    upcoming, len(tracked), settings_changed=settings_changed)
     if first_run:
         update_md += ("\n_This was the first scan, so everything currently tracked is the "
                       "starting baseline. Future updates will list only new and changed items._\n")
@@ -316,7 +352,8 @@ def main(argv=None) -> int:
     if cfg.get("create_github_issues", True) and (new_bills or changed or new_hearings or first_run):
         n = len(new_bills) + len(changed) + len(new_hearings)
         title = (f"KS legislation: tracking started ({len(tracked)} items)" if first_run
-                 else f"KS legislation update {today_s}: {n} new/changed")
+                 else f"KS legislation: tracking updated for new keywords ({len(new_bills)} added)"
+                 if settings_changed else f"KS legislation update {today_s}: {n} new/changed")
         (OUT / "issue_update_title.txt").write_text(title)
         (OUT / "issue_update_body.md").write_text(update_md[:60000])
 

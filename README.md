@@ -6,12 +6,14 @@ Automatically tracks Kansas bills, resolutions and committee hearings on the top
 - **Weekly scans out of session** (Mondays)
 - **A running list of every matching bill and resolution**, with its current stage and full action history
 - **A monthly summary report** for each month the Legislature is in session
-- **A web page with filters**: topic checkboxes, Excel-style column filters, keyword search, sorting and CSV export
+- **Hearings related to your keywords**: every hearing on a tracked bill, plus hearings in committees whose names match a keyword, with date, time, room and a live-video link
+- **A web page with filters**: topic checkboxes, Excel-style column filters, keyword search and sorting
+- **One-click Excel export** of the bills you're viewing (or just the ones you check), with their hearings and full action history
 - **Email alerts** through GitHub Issues whenever something is new or changes
 
 Data comes from the Kansas Legislature's official public API (kslegislature.gov).
 
-Tracked topics: Science, Technology, Angel Investors, R&D Tax Credits, Biotechnology, Bioscience, Biomanufacturing, Prescription Drug Pricing, 340B, and Prescription Drug Affordability.
+Tracked topics: Science, Technology, Angel Investors, R&D Tax Credits, Biotechnology, Bioscience, Biomanufacturing, Prescription Drug Pricing, 340B, Prescription Drug Affordability, Workforce Development, and Advanced Manufacturing.
 
 ---
 
@@ -47,7 +49,8 @@ Without a key the scanner works but runs slowly (the Legislature limits anonymou
 | Browse and filter tracked bills | Your GitHub Pages web page |
 | See what changed today | The latest Issue, or `reports/latest-update.md` |
 | Monthly report | An Issue on the 1st of each month after an in-session month; also `reports/monthly/` |
-| Spreadsheet of everything | **Export CSV** on the web page (exports your current filtered view), or `docs/data/tracked_bills.csv` |
+| Excel spreadsheet | **Export to Excel** on the web page. It exports the bills currently shown, or only the ones you've checked. |
+| Excel list of hearings | **Hearings** tab → **Export to Excel** (exports the hearings currently shown) |
 | Run a scan right now | **Actions → Kansas legislation scan → Run workflow** |
 | Rebuild a monthly report | **Run workflow** and enter a month like `2027-02` |
 
@@ -57,6 +60,9 @@ Without a key the scanner works but runs slowly (the Legislature limits anonymou
 - **Changed in last 7 days** shows only recent activity.
 - **Found in: Bill text** marks bills that matched only somewhere in their text, not their title. Filter these out if they're noise.
 - Tap any row to see its full title, sponsors, why it's tracked, and its complete history.
+- **Check the box** on any rows to pick specific bills, then tap **Export … selected to Excel**. The box in the header selects everything shown. With nothing checked, the export includes every bill shown under your current filters.
+- The Excel file has three tabs: **Bills** (with clickable links), **Hearings** on those bills, and the **Action history** for each. Each tab has filter buttons and a frozen header row.
+- **Hearings tab:** filter by topic, committee or *Matched by* (a tracked bill vs. the committee name). Upcoming hearings include a *Watch live* link.
 - Your filters are remembered on each device.
 
 ---

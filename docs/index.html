@@ -98,6 +98,19 @@
   .pop .pf { display: flex; justify-content: space-between; gap: 8px; padding: 8px 12px; }
   .pop input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--brand-2); }
 
+  td.sel, th.sel { width: 34px; padding-right: 0; }
+  td.sel input, th.sel input { width: 17px; height: 17px; accent-color: var(--brand-2); cursor: pointer; vertical-align: -3px; }
+  tr.row.selected { background: #eef4fc; }
+  .selbar { display: none; align-items: center; gap: 10px; background: #e8f0fa; border: 1px solid #bcd0ea; color: var(--brand);
+            border-radius: 8px; padding: 6px 10px; margin-bottom: 8px; font-size: 14px; }
+  .selbar.on { display: flex; }
+  .btn.excel { background: #1d6f42; border-color: #1d6f42; color: #fff; font-weight: 600; }
+  .btn.excel:hover { background: #185c37; }
+  .hcard .bt { font-size: 13.5px; margin-top: 3px; }
+  .hcard .bt a { font-weight: 600; color: var(--brand); text-decoration: none; }
+  .hcard .why { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .tag-cancel { background: #fbe4dc; color: var(--warn); font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 6px; margin-left: 6px; }
+  .live { font-size: 12.5px; margin-left: 8px; color: var(--brand-2); }
   footer { color: var(--muted); font-size: 12.5px; margin-top: 18px; }
   footer a { color: var(--brand-2); }
   .mobile-sort { display: none; }
@@ -114,6 +127,7 @@
     td.title { min-width: 0; }
     td[data-l]:before { content: attr(data-l) ": "; color: var(--muted); font-size: 12px; }
     td.c-type, td.c-chamber { display: inline-block; width: auto; margin-right: 10px; }
+    tbody tr.row td.sel { float: right; width: auto; padding: 2px 0 0 10px; }
     .detail-grid { grid-template-columns: 1fr; }
     .hcard { grid-template-columns: 1fr; gap: 4px; }
   }
@@ -149,7 +163,7 @@
         <option value="bill_no:asc">Bill number</option>
         <option value="stage:asc">Stage</option>
       </select>
-      <button class="btn" id="export">Export CSV</button>
+      <button class="btn excel" id="export" title="Download the bills shown (or the ones you've checked) as an Excel file">Export to Excel</button>
     </div>
     <div class="filters" id="filterbar">
       <span class="label">Filter:</span>
@@ -162,9 +176,11 @@
       <button class="btn link" id="clear">Clear all filters</button>
     </div>
     <div class="count" id="count"></div>
+    <div class="selbar" id="selbar"><span id="seltext"></span><button class="btn link" id="selclear">Clear selection</button></div>
     <div class="tablewrap">
       <table>
         <thead><tr>
+          <th class="sel"><input type="checkbox" id="selall" title="Select all shown"></th>
           <th><span class="sort" data-sort="bill_no">Bill</span></th>
           <th><span class="sort" data-sort="short_title">Title</span></th>
           <th>Topics <button class="fbtn" data-filter="topics" title="Filter topics">▼</button></th>
@@ -192,6 +208,8 @@
       </select>
       <button class="btn" data-hfilter="topics">Topics<span class="caret">▼</span></button>
       <button class="btn" data-hfilter="committee">Committee<span class="caret">▼</span></button>
+      <button class="btn" data-hfilter="matched_by">Matched by<span class="caret">▼</span></button>
+      <button class="btn excel" id="hexport" title="Download the hearings shown as an Excel file">Export to Excel</button>
     </div>
     <div class="count" id="hcount"></div>
     <div class="hcards" id="hcards"></div>
@@ -210,6 +228,7 @@
   </div>
 </div>
 
+<script src="xlsx-writer.js"></script>
 <script>
 (() => {
   const $ = s => document.querySelector(s);
@@ -219,12 +238,13 @@
   const STORE = "ksleg-filters-v1";
 
   const FILTER_LABELS = { topics: "Topics", stage: "Stage", kind: "Bill / Resolution", chamber: "Chamber",
-                          committees: "Committee", match_sources: "Found in", committee: "Committee" };
+                          committees: "Committee", match_sources: "Found in", committee: "Committee",
+                          matched_by: "Matched by" };
   const STAGE_ORDER = ["Introduced","In committee","Hearing held/scheduled","Reported by committee","Passed House","Passed Senate",
                        "In conference","Passed both chambers","Sent to Governor","Enacted","Adopted","Veto overridden","Vetoed","Dead"];
 
   let META = {}, BILLS = [], HEARINGS = [], TOPICS = [];
-  let state = { q: "", recent: "", sort: "last_action_date", dir: "desc", f: {}, hq: "", hwhen: "upcoming", hf: {}, open: {} };
+  let state = { q: "", recent: "", sort: "last_action_date", dir: "desc", f: {}, hq: "", hwhen: "upcoming", hf: {}, open: {}, sel: [] };
   try { Object.assign(state, JSON.parse(localStorage.getItem(STORE) || "{}"), { open: {} }); } catch (e) {}
   const save = () => { try { const { open, ...s } = state; localStorage.setItem(STORE, JSON.stringify(s)); } catch (e) {} };
 
@@ -243,9 +263,13 @@
                    (x.committees||[]).join(" "), (x.matched_keywords||[]).join(" "), x.last_action, x.stage].join(" ").toLowerCase();
     });
     HEARINGS.forEach(x => {
-      x._search = [x.committee, x.description, (x.bills||[]).join(" "), (x.topics||[]).join(" "), x.room, x.chamber].join(" ").toLowerCase();
+      x._search = [x.committee, x.description, (x.bills||[]).join(" "), (x.topics||[]).join(" "), x.room, x.chamber,
+                   (x.bill_details||[]).map(d => d.title).join(" "), (x.matched_keywords||[]).join(" ")].join(" ").toLowerCase();
       if (!x.committee) x.committee = x.chamber ? x.chamber + " committee" : "Committee";
     });
+    // Out of session there are no upcoming hearings; show past ones instead of an empty list
+    const t = new Date().toISOString().slice(0,10);
+    if (state.hwhen === "upcoming" && !HEARINGS.some(x => (x.date || "") >= t)) state.hwhen = "past";
     header(); renderBills(); renderHearings();
   });
 
@@ -295,9 +319,19 @@
     $$("[data-filter]").forEach(el => el.classList.toggle(el.classList.contains("fbtn") ? "on" : "active",
                                                           !!(state.f[el.dataset.filter] || []).length));
     $$("th .sort").forEach(el => el.textContent = el.textContent.replace(/ [▲▼]$/, "") + (el.dataset.sort === state.sort ? (state.dir === "asc" ? " ▲" : " ▼") : ""));
+    const selected = new Set(state.sel);
+    const shownSel = list.filter(b => selected.has(b.bill_no)).length;
+    $("#selall").checked = list.length > 0 && shownSel === list.length;
+    $("#selall").indeterminate = shownSel > 0 && shownSel < list.length;
+    $("#selbar").classList.toggle("on", selected.size > 0);
+    const hidden = selected.size - shownSel;
+    $("#seltext").textContent = `${selected.size} selected` + (hidden > 0 ? ` (${hidden} hidden by filters)` : "");
+    $("#export").textContent = selected.size ? `Export ${selected.size} selected to Excel` : `Export ${list.length} to Excel`;
     const rows = list.map(b => {
       const isOpen = state.open[b.bill_no];
-      let html = `<tr class="row" data-id="${esc(b.bill_no)}">
+      const on = selected.has(b.bill_no);
+      let html = `<tr class="row${on ? " selected" : ""}" data-id="${esc(b.bill_no)}">
+        <td class="sel"><input type="checkbox" data-sel="${esc(b.bill_no)}" ${on ? "checked" : ""} aria-label="Select ${esc(b.name)}"></td>
         <td class="bill"><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.bill_no)}</a>${b.last_changed === META.scan_date && b.first_seen !== b.last_changed ? '<span class="newtag">UPDATED</span>' : ""}${b.first_seen === META.scan_date && b.first_seen !== META.first_scan ? '<span class="newtag">NEW</span>' : ""}</td>
         <td class="title">${esc(b.short_title || b.long_title)}${b.short_title && b.long_title && b.long_title !== b.short_title ? `<div class="ltitle">${esc(trunc(b.long_title, 180))}</div>` : ""}</td>
         <td data-l="Topics">${(b.topics||[]).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</td>
@@ -305,10 +339,10 @@
         <td data-l="Last action">${esc(trunc(b.last_action, 90))}<div class="when">${esc(fmtDate(b.last_action_date))}</div></td>
         <td class="c-chamber" data-l="Chamber">${esc(b.chamber)}</td>
         <td class="c-type" data-l="Type">${esc(b.type)}</td></tr>`;
-      if (isOpen) html += `<tr class="detail"><td colspan="7">${detail(b)}</td></tr>`;
+      if (isOpen) html += `<tr class="detail"><td colspan="8">${detail(b)}</td></tr>`;
       return html;
     }).join("");
-    $("#rows").innerHTML = rows || `<tr><td colspan="7" class="empty">${BILLS.length ? "No items match these filters." : "No tracked items yet."}</td></tr>`;
+    $("#rows").innerHTML = rows || `<tr><td colspan="8" class="empty">${BILLS.length ? "No items match these filters." : "No tracked items yet."}</td></tr>`;
   }
   const trunc = (s, n) => (s = s || "", s.length > n ? s.slice(0, n - 1) + "…" : s);
   const daysAgo = n => { const d = new Date(); d.setDate(d.getDate() - n); return d.toISOString().slice(0,10); };
@@ -329,7 +363,13 @@
   }
 
   $("#rows").addEventListener("click", e => {
-    if (e.target.closest("a")) return;
+    const cb = e.target.closest("input[data-sel]");
+    if (cb) {
+      const set = new Set(state.sel);
+      cb.checked ? set.add(cb.dataset.sel) : set.delete(cb.dataset.sel);
+      state.sel = [...set]; save(); renderBills(); return;
+    }
+    if (e.target.closest("a, td.sel")) return;
     const tr = e.target.closest("tr.row"); if (!tr) return;
     const id = tr.dataset.id; state.open[id] = !state.open[id]; renderBills();
   });
@@ -343,16 +383,65 @@
     save(); renderBills();
   }));
   $("#clear").addEventListener("click", () => { state.f = {}; state.q = ""; state.recent = ""; save(); renderBills(); });
+  $("#selall").addEventListener("change", e => {
+    const list = BILLS.filter(b => billPasses(b)), set = new Set(state.sel);
+    list.forEach(b => e.target.checked ? set.add(b.bill_no) : set.delete(b.bill_no));
+    state.sel = [...set]; save(); renderBills();
+  });
+  $("#selclear").addEventListener("click", () => { state.sel = []; save(); renderBills(); });
+
+  function filterSummary(isHearing) {
+    const parts = [];
+    const q = isHearing ? state.hq : state.q, f = isHearing ? state.hf : state.f;
+    if (q) parts.push(`search "${q}"`);
+    if (!isHearing && state.recent) parts.push(`changed in last ${state.recent} day(s)`);
+    if (isHearing) parts.push(state.hwhen === "all" ? "all dates" : state.hwhen);
+    for (const [k, v] of Object.entries(f)) if (v && v.length) parts.push(`${FILTER_LABELS[k] || k}: ${v.join(", ")}`);
+    return parts.length ? parts.join(" · ") : "none";
+  }
+  const stamp = () => new Date().toLocaleString(undefined, {dateStyle: "medium", timeStyle: "short"});
+  const today10 = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`; };
+
+  const HEARING_COLS = [
+    {header: "Date", type: "date", width: 13}, {header: "Time", width: 10}, {header: "Committee", type: "wrap", width: 30},
+    {header: "Room", width: 9}, {header: "Bills", type: "wrap", width: 14}, {header: "Bill titles", type: "wrap", width: 60},
+    {header: "Topics", type: "wrap", width: 26}, {header: "Matched by", type: "wrap", width: 18}, {header: "Status", width: 11},
+    {header: "Link", type: "link", width: 14}];
+  const hearingRow = h => [h.date, h.time, h.committee, h.room, (h.bills || []).join(", "),
+    (h.bill_details || []).map(d => `${d.name}: ${d.title}`).join("\n") || h.description,
+    (h.topics || []).join(", "), (h.matched_by || []).join(", "), h.status || ((h.date || "") < today10() ? "Held" : "Scheduled"),
+    {text: "Open", url: h.url}];
+
   $("#export").addEventListener("click", () => {
-    const list = sorted(BILLS.filter(b => billPasses(b)));
-    const cols = [["Bill","name"],["Type","type"],["Chamber","chamber"],["Short title","short_title"],["Long title","long_title"],
-                  ["Topics","topics"],["Stage","stage"],["Last action","last_action"],["Last action date","last_action_date"],
-                  ["Sponsors","sponsors"],["Committees","committees"],["Matched keywords","matched_keywords"],["Found in","match_sources"],["Link","url"]];
-    const cell = v => `"${String(Array.isArray(v) ? v.join("; ") : (v ?? "")).replace(/"/g, '""')}"`;
-    const csv = [cols.map(c => cell(c[0])).join(","), ...list.map(b => cols.map(c => cell(b[c[1]])).join(","))].join("\r\n");
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob(["﻿" + csv], {type: "text/csv"}));
-    a.download = `ks-legislation-${new Date().toISOString().slice(0,10)}.csv`; a.click();
+    const selected = new Set(state.sel);
+    const list = selected.size ? sorted(BILLS.filter(b => selected.has(b.bill_no))) : sorted(BILLS.filter(b => billPasses(b)));
+    if (!list.length) { alert("There are no bills to export."); return; }
+    const which = selected.size ? `${list.length} selected bill(s)` : `${list.length} bill(s) shown · Filters: ${filterSummary(false)}`;
+    const bills = {
+      name: "Bills",
+      title: `Kansas legislation tracker — exported ${stamp()} — ${which}`,
+      columns: [
+        {header: "Bill", type: "link", width: 12}, {header: "Short title", type: "wrap", width: 50},
+        {header: "Topics", type: "wrap", width: 24}, {header: "Stage", width: 20},
+        {header: "Last action", type: "wrap", width: 44}, {header: "Last action date", type: "date", width: 15},
+        {header: "Introduced", type: "date", width: 13}, {header: "Chamber", width: 10}, {header: "Type", width: 20},
+        {header: "Sponsors", type: "wrap", width: 34}, {header: "Committees", type: "wrap", width: 30},
+        {header: "Matched keywords", type: "wrap", width: 24}, {header: "Found in", width: 12},
+        {header: "Full title", type: "wrap", width: 70}],
+      rows: list.map(b => [{text: b.name || b.bill_no, url: b.url}, b.short_title || b.long_title, (b.topics || []).join(", "),
+        b.stage, b.last_action, b.last_action_date, b.intro_date, b.chamber, b.type, (b.sponsors || []).join("; "),
+        (b.committees || []).join("; "), (b.matched_keywords || []).join(", "), (b.match_sources || []).join(", "), b.long_title]),
+    };
+    const nos = new Set(list.map(b => b.bill_no));
+    const hs = HEARINGS.filter(h => (h.bills || []).some(x => nos.has(x)))
+      .sort((a, b) => ((a.date||"") + (a.time||"")).localeCompare((b.date||"") + (b.time||"")));
+    const hearings = { name: "Hearings", title: `Hearings on these bills (${hs.length})`, columns: HEARING_COLS, rows: hs.map(hearingRow) };
+    const hist = [];
+    list.forEach(b => (b.history || []).forEach(h => hist.push([b.name || b.bill_no, h.date, h.chamber, h.action])));
+    const history = { name: "Action history", title: "Full action history", rows: hist,
+      columns: [{header: "Bill", width: 12}, {header: "Date", type: "date", width: 13}, {header: "Chamber", width: 10},
+                {header: "Action", type: "wrap", width: 90}] };
+    XlsxWriter.download(XlsxWriter.build([bills, hearings, history]), `KS-legislation-${today10()}.xlsx`);
   });
 
   // ---------------------------------------------------------------- hearings
@@ -377,18 +466,33 @@
     $("#n-hearings").textContent = `(${up} upcoming)`;
     $("#hcount").textContent = `Showing ${list.length} hearing${list.length === 1 ? "" : "s"}`;
     $$("[data-hfilter]").forEach(el => el.classList.toggle("active", !!(state.hf[el.dataset.hfilter] || []).length));
-    const billLink = no => { const b = BILLS.find(x => x.bill_no === no); return b ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name)}</a>` : esc(no); };
-    $("#hcards").innerHTML = list.map(h => `
-      <div class="hcard ${(h.date||"") < today ? "past" : ""}">
+    const billsHtml = h => {
+      const details = h.bill_details && h.bill_details.length ? h.bill_details
+        : (h.bills || []).map(no => { const b = BILLS.find(x => x.bill_no === no); return b ? {name: b.name, title: b.short_title || b.long_title, url: b.url} : {name: no, title: "", url: ""}; });
+      if (!details.length) return `<div class="desc">${esc(h.description)}</div>`;
+      return details.map(d => `<div class="bt">${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.name)}</a>` : esc(d.name)} — ${esc(trunc(d.title, 200))}</div>`).join("");
+    };
+    $("#hcards").innerHTML = list.map(h => {
+      const past = (h.date||"") < today;
+      return `<div class="hcard ${past ? "past" : ""}">
         <div><div class="date">${esc(fmtDate(h.date))}</div><div class="time">${esc(h.time || "")}${h.room ? ` · Room ${esc(h.room)}` : ""}</div></div>
         <div>
-          <div class="committee">${esc(h.committee)}</div>
-          <div class="desc">${esc(h.description)}</div>
-          <div style="margin-top:4px">${(h.bills||[]).map(billLink).join(" · ")} ${(h.topics||[]).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>
+          <div class="committee">${esc(h.committee)}${h.status ? `<span class="tag-cancel">${esc(h.status)}</span>` : ""}${!past && h.stream_url ? `<a class="live" href="${esc(h.stream_url)}" target="_blank" rel="noopener">Watch live ↗</a>` : ""}</div>
+          ${billsHtml(h)}
+          <div style="margin-top:5px">${(h.topics||[]).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>
+          ${(h.matched_keywords||[]).length ? `<div class="why">Matched: ${esc(h.matched_keywords.join(", "))}${(h.matched_by||[]).length ? ` (${esc(h.matched_by.join(", ").toLowerCase())})` : ""}</div>` : ""}
         </div>
-      </div>`).join("") || `<div class="empty tablewrap">No ${state.hwhen === "all" ? "" : state.hwhen + " "}hearings on tracked topics.</div>`;
+      </div>`; }).join("") || `<div class="empty tablewrap">No ${state.hwhen === "all" ? "" : state.hwhen + " "}hearings on tracked topics.</div>`;
   }
   $("#hq").addEventListener("input", e => { state.hq = e.target.value; save(); renderHearings(); });
+  $("#hexport").addEventListener("click", () => {
+    const list = HEARINGS.filter(h => hearingPasses(h))
+      .sort((a, b) => ((a.date||"") + (a.time||"")).localeCompare((b.date||"") + (b.time||"")));
+    if (!list.length) { alert("There are no hearings to export."); return; }
+    XlsxWriter.download(XlsxWriter.build([{ name: "Hearings", columns: HEARING_COLS, rows: list.map(hearingRow),
+      title: `Kansas legislation hearings — exported ${stamp()} — ${list.length} shown · Filters: ${filterSummary(true)}` }]),
+      `KS-hearings-${today10()}.xlsx`);
+  });
   $("#hwhen").addEventListener("change", e => { state.hwhen = e.target.value; save(); renderHearings(); });
 
   // ---------------------------------------------------------------- tabs
