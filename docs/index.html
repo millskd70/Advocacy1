@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kansas Legislation Tracker</title>
+<style>
+  :root {
+    --ink: #1c2430; --muted: #5b6573; --line: #dde2e8; --bg: #f6f7f9; --card: #fff;
+    --brand: #1f3a5f; --brand-2: #2d5b8f; --accent: #c8962e; --chip: #eef2f7;
+    --new: #1d7a46; --warn: #a4471b; --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: var(--ink); background: var(--bg); }
+  header { background: var(--brand); color: #fff; padding: 18px 20px 14px; }
+  header h1 { margin: 0; font-size: 21px; letter-spacing: .2px; }
+  header .sub { margin-top: 4px; color: #cfd9e6; font-size: 13px; }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 12px; font-weight: 600;
+           background: rgba(255,255,255,.15); color: #fff; margin-left: 6px; }
+  .badge.on { background: var(--accent); color: #1c1300; }
+  main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+  .tab { border: 0; background: none; padding: 10px 14px; font: inherit; font-weight: 600; color: var(--muted);
+         cursor: pointer; border-bottom: 3px solid transparent; }
+  .tab.active { color: var(--brand); border-bottom-color: var(--accent); }
+  .tab .n { font-weight: 500; color: var(--muted); }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .search { flex: 1 1 260px; position: relative; }
+  .search input { width: 100%; padding: 9px 12px 9px 34px; border: 1px solid var(--line); border-radius: 8px;
+                  font: inherit; background: var(--card); }
+  .search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); opacity: .5; }
+  .btn { border: 1px solid var(--line); background: var(--card); border-radius: 8px; padding: 8px 12px;
+         font: inherit; font-size: 14px; cursor: pointer; color: var(--ink); white-space: nowrap; }
+  .btn:hover { border-color: #b7c0cc; }
+  .btn.active { border-color: var(--brand-2); background: #e8f0fa; color: var(--brand); font-weight: 600; }
+  .btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); }
+  .btn.link { border: 0; background: none; color: var(--brand-2); padding: 8px 6px; }
+  select.btn { padding-right: 8px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 10px; }
+  .filters .label { color: var(--muted); font-size: 13px; margin-right: 2px; }
+  .count { color: var(--muted); font-size: 13px; margin: 4px 0 8px; }
+  .caret { font-size: 10px; margin-left: 4px; opacity: .7; }
+
+  /* table */
+  .tablewrap { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 12px; vertical-align: top; border-bottom: 1px solid var(--line); }
+  th { background: #f0f3f7; font-size: 12.5px; text-transform: uppercase; letter-spacing: .4px; color: var(--muted);
+       position: sticky; top: 0; z-index: 1; white-space: nowrap; user-select: none; }
+  th .sort { cursor: pointer; }
+  th .fbtn { border: 0; background: none; cursor: pointer; padding: 2px 4px; margin-left: 2px; color: var(--muted);
+             border-radius: 4px; font-size: 11px; }
+  th .fbtn.on { background: var(--brand-2); color: #fff; }
+  tbody tr.row { cursor: pointer; }
+  tbody tr.row:hover { background: #fafbfd; }
+  td.bill a { font-weight: 700; color: var(--brand); text-decoration: none; white-space: nowrap; }
+  td.title { min-width: 260px; }
+  .ltitle { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .chip { display: inline-block; background: var(--chip); color: #29405e; border-radius: 99px; padding: 1px 8px;
+          font-size: 12px; margin: 1px 3px 1px 0; white-space: nowrap; }
+  .stage { font-weight: 600; font-size: 13px; white-space: nowrap; }
+  .stage.Enacted, .stage.Adopted { color: var(--new); }
+  .stage.Vetoed, .stage.Dead { color: var(--warn); }
+  .when { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+  .newtag { background: #dff3e7; color: var(--new); font-size: 11px; font-weight: 700; border-radius: 4px;
+            padding: 0 5px; margin-left: 6px; vertical-align: 1px; }
+  tr.detail td { background: #fbfcfe; padding: 4px 16px 16px; }
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 28px; font-size: 13.5px; }
+  .detail-grid h4 { margin: 10px 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .4px; color: var(--muted); }
+  .hist { list-style: none; margin: 0; padding: 0; max-height: 280px; overflow: auto; }
+  .hist li { padding: 4px 0; border-bottom: 1px dashed var(--line); }
+  .hist .d { color: var(--muted); font-size: 12px; margin-right: 6px; white-space: nowrap; }
+  .empty { padding: 36px; text-align: center; color: var(--muted); }
+
+  /* hearings */
+  .hcards { display: grid; gap: 10px; }
+  .hcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px;
+           display: grid; grid-template-columns: 120px 1fr; gap: 12px; }
+  .hcard .date { font-weight: 700; color: var(--brand); }
+  .hcard .time { color: var(--muted); font-size: 13px; }
+  .hcard .committee { font-weight: 600; }
+  .hcard .desc { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+  .hcard.past { opacity: .75; }
+
+  /* popover (Excel-style filter) */
+  .pop { position: absolute; z-index: 50; background: #fff; border: 1px solid #c9d1db; border-radius: 10px;
+         box-shadow: 0 10px 30px rgba(20,30,50,.18); width: 290px; max-width: calc(100vw - 20px); display: none; }
+  .pop.open { display: block; }
+  .pop .ph { padding: 10px 12px 6px; font-weight: 700; font-size: 14px; }
+  .pop .ps { padding: 0 12px 8px; }
+  .pop .ps input { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; font: inherit; font-size: 14px; }
+  .pop .pl { max-height: 280px; overflow: auto; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 4px 0; }
+  .pop label { display: flex; align-items: center; gap: 8px; padding: 5px 12px; cursor: pointer; font-size: 14px; }
+  .pop label:hover { background: #f4f7fb; }
+  .pop label .c { margin-left: auto; color: var(--muted); font-size: 12px; }
+  .pop label.all { font-weight: 600; }
+  .pop .pf { display: flex; justify-content: space-between; gap: 8px; padding: 8px 12px; }
+  .pop input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--brand-2); }
+
+  footer { color: var(--muted); font-size: 12.5px; margin-top: 18px; }
+  footer a { color: var(--brand-2); }
+  .mobile-sort { display: none; }
+
+  @media (max-width: 760px) {
+    header { padding: 14px 14px 12px; }
+    main { padding: 10px 10px 30px; }
+    .mobile-sort { display: inline-block; }
+    .tab { padding: 10px 8px; font-size: 14px; white-space: nowrap; }
+    thead { display: none; }
+    table, tbody, tr, td { display: block; width: 100%; }
+    tbody tr.row { border-bottom: 1px solid var(--line); padding: 10px 12px; }
+    tbody tr.row td { border: 0; padding: 2px 0; }
+    td.title { min-width: 0; }
+    td[data-l]:before { content: attr(data-l) ": "; color: var(--muted); font-size: 12px; }
+    td.c-type, td.c-chamber { display: inline-block; width: auto; margin-right: 10px; }
+    .detail-grid { grid-template-columns: 1fr; }
+    .hcard { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Kansas Legislation Tracker</h1>
+  <div class="sub" id="sub">Loading…</div>
+</header>
+
+<main>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="bills">Bills &amp; Resolutions <span class="n" id="n-bills"></span></button>
+    <button class="tab" data-tab="hearings">Hearings <span class="n" id="n-hearings"></span></button>
+  </nav>
+
+  <!-- ===================== BILLS ===================== -->
+  <section id="tab-bills">
+    <div class="toolbar">
+      <div class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search bills by keyword, number, sponsor, committee…" autocomplete="off">
+      </div>
+      <select id="recent" class="btn" title="Show only recently changed items">
+        <option value="">Any time</option>
+        <option value="1">Changed today</option>
+        <option value="7">Changed in last 7 days</option>
+        <option value="30">Changed in last 30 days</option>
+      </select>
+      <select id="msort" class="btn mobile-sort" title="Sort">
+        <option value="last_action_date:desc">Newest activity</option>
+        <option value="bill_no:asc">Bill number</option>
+        <option value="stage:asc">Stage</option>
+      </select>
+      <button class="btn" id="export">Export CSV</button>
+    </div>
+    <div class="filters" id="filterbar">
+      <span class="label">Filter:</span>
+      <button class="btn" data-filter="topics">Topics<span class="caret">▼</span></button>
+      <button class="btn" data-filter="stage">Stage<span class="caret">▼</span></button>
+      <button class="btn" data-filter="kind">Bill / Resolution<span class="caret">▼</span></button>
+      <button class="btn" data-filter="chamber">Chamber<span class="caret">▼</span></button>
+      <button class="btn" data-filter="committees">Committee<span class="caret">▼</span></button>
+      <button class="btn" data-filter="match_sources">Found in<span class="caret">▼</span></button>
+      <button class="btn link" id="clear">Clear all filters</button>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr>
+          <th><span class="sort" data-sort="bill_no">Bill</span></th>
+          <th><span class="sort" data-sort="short_title">Title</span></th>
+          <th>Topics <button class="fbtn" data-filter="topics" title="Filter topics">▼</button></th>
+          <th><span class="sort" data-sort="stage">Stage</span> <button class="fbtn" data-filter="stage" title="Filter stage">▼</button></th>
+          <th><span class="sort" data-sort="last_action_date">Last action</span></th>
+          <th>Chamber <button class="fbtn" data-filter="chamber" title="Filter chamber">▼</button></th>
+          <th>Type <button class="fbtn" data-filter="kind" title="Filter type">▼</button></th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===================== HEARINGS ===================== -->
+  <section id="tab-hearings" hidden>
+    <div class="toolbar">
+      <div class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="hq" type="search" placeholder="Search hearings…" autocomplete="off">
+      </div>
+      <select id="hwhen" class="btn">
+        <option value="upcoming">Upcoming</option>
+        <option value="past">Past</option>
+        <option value="all">All</option>
+      </select>
+      <button class="btn" data-hfilter="topics">Topics<span class="caret">▼</span></button>
+      <button class="btn" data-hfilter="committee">Committee<span class="caret">▼</span></button>
+    </div>
+    <div class="count" id="hcount"></div>
+    <div class="hcards" id="hcards"></div>
+  </section>
+
+  <footer id="foot"></footer>
+</main>
+
+<div class="pop" id="pop">
+  <div class="ph" id="pop-title"></div>
+  <div class="ps"><input id="pop-search" type="search" placeholder="Search values…"></div>
+  <div class="pl" id="pop-list"></div>
+  <div class="pf">
+    <button class="btn link" id="pop-clear">Clear</button>
+    <span><button class="btn" id="pop-cancel">Cancel</button> <button class="btn primary" id="pop-ok">OK</button></span>
+  </div>
+</div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const fmtDate = d => { if (!d) return ""; const x = new Date(d + "T12:00:00"); return isNaN(x) ? d : x.toLocaleDateString(undefined, {month:"short", day:"numeric", year:"numeric"}); };
+  const STORE = "ksleg-filters-v1";
+
+  const FILTER_LABELS = { topics: "Topics", stage: "Stage", kind: "Bill / Resolution", chamber: "Chamber",
+                          committees: "Committee", match_sources: "Found in", committee: "Committee" };
+  const STAGE_ORDER = ["Introduced","In committee","Hearing held/scheduled","Reported by committee","Passed House","Passed Senate",
+                       "In conference","Passed both chambers","Sent to Governor","Enacted","Adopted","Veto overridden","Vetoed","Dead"];
+
+  let META = {}, BILLS = [], HEARINGS = [], TOPICS = [];
+  let state = { q: "", recent: "", sort: "last_action_date", dir: "desc", f: {}, hq: "", hwhen: "upcoming", hf: {}, open: {} };
+  try { Object.assign(state, JSON.parse(localStorage.getItem(STORE) || "{}"), { open: {} }); } catch (e) {}
+  const save = () => { try { const { open, ...s } = state; localStorage.setItem(STORE, JSON.stringify(s)); } catch (e) {} };
+
+  const asList = v => Array.isArray(v) ? v : (v ? [v] : []);
+  const valuesOf = (item, key) => { const v = asList(item[key]); return v.length ? v : ["(none)"]; };
+
+  // ---------------------------------------------------------------- load
+  Promise.all([
+    fetch("data/bills.json", {cache: "no-store"}).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    fetch("data/hearings.json", {cache: "no-store"}).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  ]).then(([b, h]) => {
+    META = b || {}; BILLS = (b && b.bills) || []; HEARINGS = (h && h.hearings) || [];
+    TOPICS = META.topics || (h && h.topics) || [];
+    BILLS.forEach(x => {
+      x._search = [x.name, x.bill_no, x.short_title, x.long_title, (x.sponsors||[]).join(" "), (x.topics||[]).join(" "),
+                   (x.committees||[]).join(" "), (x.matched_keywords||[]).join(" "), x.last_action, x.stage].join(" ").toLowerCase();
+    });
+    HEARINGS.forEach(x => {
+      x._search = [x.committee, x.description, (x.bills||[]).join(" "), (x.topics||[]).join(" "), x.room, x.chamber].join(" ").toLowerCase();
+      if (!x.committee) x.committee = x.chamber ? x.chamber + " committee" : "Committee";
+    });
+    header(); renderBills(); renderHearings();
+  });
+
+  function header() {
+    const live = META.in_session ? '<span class="badge on">In session</span>' : '<span class="badge">Out of session</span>';
+    $("#sub").innerHTML = META.generated_at
+      ? `Updated ${esc(new Date(META.generated_at).toLocaleString(undefined, {dateStyle:"medium", timeStyle:"short"}))} · ${esc(META.scan_mode || "")} ${live}`
+      : "No data yet — the first scan will fill this page.";
+    const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+    const repo = m ? `https://github.com/${m[1]}/${location.pathname.split("/")[1]}` : null;
+    $("#foot").innerHTML = `Source: Kansas Legislature (kslegislature.gov). ` +
+      `Data file: <a href="data/tracked_bills.csv">tracked_bills.csv</a>` +
+      (repo ? ` · <a href="${repo}/tree/main/reports">Scan updates &amp; monthly reports</a> · <a href="${repo}/blob/main/config.yml">Edit topics</a>` : "");
+  }
+
+  // ---------------------------------------------------------------- bills
+  function billPasses(b, skipKey) {
+    if (state.q) { for (const w of state.q.toLowerCase().split(/\s+/).filter(Boolean)) if (!b._search.includes(w)) return false; }
+    if (state.recent) {
+      const cut = new Date(); cut.setDate(cut.getDate() - (+state.recent - 1)); const c = cut.toISOString().slice(0,10);
+      if (!((b.last_changed || "") >= c || (b.last_action_date || "") >= c)) return false;
+    }
+    for (const [k, sel] of Object.entries(state.f)) {
+      if (k === skipKey || !sel || !sel.length) continue;
+      if (!valuesOf(b, k).some(v => sel.includes(v))) return false;
+    }
+    return true;
+  }
+
+  function sorted(list) {
+    const { sort, dir } = state, m = dir === "asc" ? 1 : -1;
+    const key = b => {
+      if (sort === "bill_no") { const p = b.bill_no.match(/^([A-Z]+)(\d+)/); return p ? p[1].padEnd(4) + p[2].padStart(6, "0") : b.bill_no; }
+      if (sort === "stage") return String(STAGE_ORDER.indexOf(b.stage)).padStart(3, "0");
+      return (b[sort] || "").toString().toLowerCase();
+    };
+    return [...list].sort((a, b) => (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0) * m);
+  }
+
+  function renderBills() {
+    const list = sorted(BILLS.filter(b => billPasses(b)));
+    $("#n-bills").textContent = `(${BILLS.length})`;
+    $("#q").value = state.q; $("#recent").value = state.recent;
+    $("#msort").value = `${state.sort}:${state.dir}`;
+    const nf = Object.values(state.f).filter(v => v && v.length).length;
+    $("#count").textContent = `Showing ${list.length} of ${BILLS.length}` + (nf ? ` · ${nf} filter${nf > 1 ? "s" : ""} on` : "");
+    $$("[data-filter]").forEach(el => el.classList.toggle(el.classList.contains("fbtn") ? "on" : "active",
+                                                          !!(state.f[el.dataset.filter] || []).length));
+    $$("th .sort").forEach(el => el.textContent = el.textContent.replace(/ [▲▼]$/, "") + (el.dataset.sort === state.sort ? (state.dir === "asc" ? " ▲" : " ▼") : ""));
+    const rows = list.map(b => {
+      const isOpen = state.open[b.bill_no];
+      let html = `<tr class="row" data-id="${esc(b.bill_no)}">
+        <td class="bill"><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.bill_no)}</a>${b.last_changed === META.scan_date && b.first_seen !== b.last_changed ? '<span class="newtag">UPDATED</span>' : ""}${b.first_seen === META.scan_date && b.first_seen !== META.first_scan ? '<span class="newtag">NEW</span>' : ""}</td>
+        <td class="title">${esc(b.short_title || b.long_title)}${b.short_title && b.long_title && b.long_title !== b.short_title ? `<div class="ltitle">${esc(trunc(b.long_title, 180))}</div>` : ""}</td>
+        <td data-l="Topics">${(b.topics||[]).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</td>
+        <td data-l="Stage"><span class="stage ${esc((b.stage||"").split(" ")[0])}">${esc(b.stage)}</span></td>
+        <td data-l="Last action">${esc(trunc(b.last_action, 90))}<div class="when">${esc(fmtDate(b.last_action_date))}</div></td>
+        <td class="c-chamber" data-l="Chamber">${esc(b.chamber)}</td>
+        <td class="c-type" data-l="Type">${esc(b.type)}</td></tr>`;
+      if (isOpen) html += `<tr class="detail"><td colspan="7">${detail(b)}</td></tr>`;
+      return html;
+    }).join("");
+    $("#rows").innerHTML = rows || `<tr><td colspan="7" class="empty">${BILLS.length ? "No items match these filters." : "No tracked items yet."}</td></tr>`;
+  }
+  const trunc = (s, n) => (s = s || "", s.length > n ? s.slice(0, n - 1) + "…" : s);
+  const daysAgo = n => { const d = new Date(); d.setDate(d.getDate() - n); return d.toISOString().slice(0,10); };
+
+  function detail(b) {
+    const hist = [...(b.history || [])].reverse().map(h =>
+      `<li><span class="d">${esc(fmtDate(h.date))}</span>${h.chamber ? `<b>${esc(h.chamber)}</b> · ` : ""}${esc(h.action)}</li>`).join("");
+    return `<div class="detail-grid">
+      <div>
+        <h4>Full title</h4><div>${esc(b.long_title || b.short_title)}</div>
+        <h4>Sponsors</h4><div>${esc((b.sponsors||[]).join("; ") || "—")}</div>
+        <h4>Committees</h4><div>${esc((b.committees||[]).join("; ") || "—")}</div>
+        <h4>Why it's tracked</h4><div>Keywords: ${esc((b.matched_keywords||[]).join(", "))} · Found in: ${esc((b.match_sources||[]).join(", "))}</div>
+        <h4>Links</h4><div><a href="${esc(b.url)}" target="_blank" rel="noopener">Official bill page (text, fiscal note, testimony) ↗</a></div>
+      </div>
+      <div><h4>History (${(b.history||[]).length})</h4><ul class="hist">${hist || "<li>No actions recorded yet.</li>"}</ul></div>
+    </div>`;
+  }
+
+  $("#rows").addEventListener("click", e => {
+    if (e.target.closest("a")) return;
+    const tr = e.target.closest("tr.row"); if (!tr) return;
+    const id = tr.dataset.id; state.open[id] = !state.open[id]; renderBills();
+  });
+  $("#q").addEventListener("input", e => { state.q = e.target.value; save(); renderBills(); });
+  $("#recent").addEventListener("change", e => { state.recent = e.target.value; save(); renderBills(); });
+  $("#msort").addEventListener("change", e => { [state.sort, state.dir] = e.target.value.split(":"); save(); renderBills(); });
+  $$("th .sort").forEach(el => el.addEventListener("click", () => {
+    const k = el.dataset.sort;
+    if (state.sort === k) state.dir = state.dir === "asc" ? "desc" : "asc";
+    else { state.sort = k; state.dir = k === "last_action_date" ? "desc" : "asc"; }
+    save(); renderBills();
+  }));
+  $("#clear").addEventListener("click", () => { state.f = {}; state.q = ""; state.recent = ""; save(); renderBills(); });
+  $("#export").addEventListener("click", () => {
+    const list = sorted(BILLS.filter(b => billPasses(b)));
+    const cols = [["Bill","name"],["Type","type"],["Chamber","chamber"],["Short title","short_title"],["Long title","long_title"],
+                  ["Topics","topics"],["Stage","stage"],["Last action","last_action"],["Last action date","last_action_date"],
+                  ["Sponsors","sponsors"],["Committees","committees"],["Matched keywords","matched_keywords"],["Found in","match_sources"],["Link","url"]];
+    const cell = v => `"${String(Array.isArray(v) ? v.join("; ") : (v ?? "")).replace(/"/g, '""')}"`;
+    const csv = [cols.map(c => cell(c[0])).join(","), ...list.map(b => cols.map(c => cell(b[c[1]])).join(","))].join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob(["﻿" + csv], {type: "text/csv"}));
+    a.download = `ks-legislation-${new Date().toISOString().slice(0,10)}.csv`; a.click();
+  });
+
+  // ---------------------------------------------------------------- hearings
+  function hearingPasses(h, skipKey) {
+    const today = new Date().toISOString().slice(0,10);
+    if (state.hwhen === "upcoming" && (h.date || "") < today) return false;
+    if (state.hwhen === "past" && (h.date || "") >= today) return false;
+    if (state.hq) { for (const w of state.hq.toLowerCase().split(/\s+/).filter(Boolean)) if (!h._search.includes(w)) return false; }
+    for (const [k, sel] of Object.entries(state.hf)) {
+      if (k === skipKey || !sel || !sel.length) continue;
+      if (!valuesOf(h, k).some(v => sel.includes(v))) return false;
+    }
+    return true;
+  }
+  function renderHearings() {
+    $("#hq").value = state.hq; $("#hwhen").value = state.hwhen;
+    let list = HEARINGS.filter(h => hearingPasses(h));
+    list.sort((a, b) => ((a.date||"") + (a.time||"")).localeCompare((b.date||"") + (b.time||"")));
+    if (state.hwhen !== "upcoming") list.reverse();
+    const today = new Date().toISOString().slice(0,10);
+    const up = HEARINGS.filter(h => (h.date||"") >= today).length;
+    $("#n-hearings").textContent = `(${up} upcoming)`;
+    $("#hcount").textContent = `Showing ${list.length} hearing${list.length === 1 ? "" : "s"}`;
+    $$("[data-hfilter]").forEach(el => el.classList.toggle("active", !!(state.hf[el.dataset.hfilter] || []).length));
+    const billLink = no => { const b = BILLS.find(x => x.bill_no === no); return b ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name)}</a>` : esc(no); };
+    $("#hcards").innerHTML = list.map(h => `
+      <div class="hcard ${(h.date||"") < today ? "past" : ""}">
+        <div><div class="date">${esc(fmtDate(h.date))}</div><div class="time">${esc(h.time || "")}${h.room ? ` · Room ${esc(h.room)}` : ""}</div></div>
+        <div>
+          <div class="committee">${esc(h.committee)}</div>
+          <div class="desc">${esc(h.description)}</div>
+          <div style="margin-top:4px">${(h.bills||[]).map(billLink).join(" · ")} ${(h.topics||[]).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>
+        </div>
+      </div>`).join("") || `<div class="empty tablewrap">No ${state.hwhen === "all" ? "" : state.hwhen + " "}hearings on tracked topics.</div>`;
+  }
+  $("#hq").addEventListener("input", e => { state.hq = e.target.value; save(); renderHearings(); });
+  $("#hwhen").addEventListener("change", e => { state.hwhen = e.target.value; save(); renderHearings(); });
+
+  // ---------------------------------------------------------------- tabs
+  $$(".tab").forEach(t => t.addEventListener("click", () => {
+    $$(".tab").forEach(x => x.classList.toggle("active", x === t));
+    $("#tab-bills").hidden = t.dataset.tab !== "bills";
+    $("#tab-hearings").hidden = t.dataset.tab !== "hearings";
+  }));
+
+  // ---------------------------------------------------------------- Excel-style filter popover
+  const pop = $("#pop"); let popCtx = null;
+  function openFilter(anchor, key, isHearing) {
+    const items = isHearing ? HEARINGS.filter(h => hearingPasses(h, key)) : BILLS.filter(b => billPasses(b, key));
+    const all = isHearing ? HEARINGS : BILLS;
+    const counts = {};
+    items.forEach(it => valuesOf(it, key).forEach(v => counts[v] = (counts[v] || 0) + 1));
+    let values = [...new Set(all.flatMap(it => valuesOf(it, key)))];
+    if (key === "topics") values = [...TOPICS, ...values.filter(v => !TOPICS.includes(v))];
+    else if (key === "stage") values.sort((a, b) => STAGE_ORDER.indexOf(a) - STAGE_ORDER.indexOf(b));
+    else values.sort();
+    const store = isHearing ? state.hf : state.f;
+    const current = store[key] && store[key].length ? new Set(store[key]) : new Set(values);
+    popCtx = { key, isHearing, values, sel: current };
+    $("#pop-title").textContent = FILTER_LABELS[key] || key;
+    $("#pop-search").value = "";
+    drawList();
+    pop.classList.add("open");
+    const r = anchor.getBoundingClientRect();
+    const left = Math.min(r.left + window.scrollX, window.scrollX + document.documentElement.clientWidth - pop.offsetWidth - 10);
+    pop.style.left = Math.max(10, left) + "px";
+    pop.style.top = (r.bottom + window.scrollY + 4) + "px";
+    function drawList() {
+      const term = $("#pop-search").value.toLowerCase();
+      const shown = popCtx.values.filter(v => v.toLowerCase().includes(term));
+      const allOn = shown.every(v => popCtx.sel.has(v));
+      $("#pop-list").innerHTML = `<label class="all"><input type="checkbox" data-all ${allOn ? "checked" : ""}> (Select all)</label>` +
+        shown.map(v => `<label><input type="checkbox" value="${esc(v)}" ${popCtx.sel.has(v) ? "checked" : ""}> ${esc(v)}<span class="c">${counts[v] || 0}</span></label>`).join("");
+      popCtx.shown = shown;
+    }
+    popCtx.redraw = drawList;
+  }
+  $("#pop-search").addEventListener("input", () => popCtx && popCtx.redraw());
+  $("#pop-list").addEventListener("change", e => {
+    const cb = e.target; if (!popCtx) return;
+    if (cb.hasAttribute("data-all")) popCtx.shown.forEach(v => cb.checked ? popCtx.sel.add(v) : popCtx.sel.delete(v));
+    else cb.checked ? popCtx.sel.add(cb.value) : popCtx.sel.delete(cb.value);
+    popCtx.redraw();
+  });
+  const closePop = () => { pop.classList.remove("open"); popCtx = null; };
+  $("#pop-cancel").addEventListener("click", closePop);
+  $("#pop-clear").addEventListener("click", () => { if (!popCtx) return; const s = popCtx.isHearing ? state.hf : state.f; delete s[popCtx.key]; save(); popCtx.isHearing ? renderHearings() : renderBills(); closePop(); });
+  $("#pop-ok").addEventListener("click", () => {
+    if (!popCtx) return;
+    const s = popCtx.isHearing ? state.hf : state.f;
+    const sel = popCtx.values.filter(v => popCtx.sel.has(v));
+    if (sel.length === popCtx.values.length) delete s[popCtx.key]; else s[popCtx.key] = sel;
+    save(); popCtx.isHearing ? renderHearings() : renderBills(); closePop();
+  });
+  document.addEventListener("click", e => {
+    const b = e.target.closest("[data-filter],[data-hfilter]");
+    if (b) { e.stopPropagation(); const h = !!b.dataset.hfilter; openFilter(b, b.dataset.filter || b.dataset.hfilter, h); return; }
+    if (pop.classList.contains("open") && !pop.contains(e.target)) closePop();
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closePop(); });
+})();
+</script>
+</body>
+</html>

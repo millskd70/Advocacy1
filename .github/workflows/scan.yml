@@ -1,0 +1,79 @@
+name: Kansas legislation scan
+
+on:
+  schedule:
+    # Every day at 11:17 UTC (5:17 AM Central Standard / 6:17 AM Central Daylight).
+    # The script itself decides whether today is a scan day:
+    # daily during session, weekly (Mondays) out of session.
+    - cron: "17 11 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Scan now even if today isn't a scheduled scan day"
+        type: boolean
+        default: true
+      monthly:
+        description: "Optional: rebuild the monthly report for a month (YYYY-MM)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write   # save data, reports and the web page
+  issues: write     # post update/monthly-report notifications as Issues
+
+concurrency:
+  group: ks-leg-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scan
+        env:
+          KS_LEG_API_KEY: ${{ secrets.KS_LEG_API_KEY }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
+          MONTHLY: ${{ inputs.monthly }}
+        run: |
+          ARGS=()
+          if [ "$FORCE" = "true" ]; then ARGS+=(--force); fi
+          if [ -n "$MONTHLY" ]; then
+            if [[ "$MONTHLY" =~ ^[0-9]{4}-[0-9]{2}$ ]]; then ARGS+=(--monthly "$MONTHLY");
+            else echo "monthly must look like 2027-02"; exit 1; fi
+          fi
+          python -m tracker.scan "${ARGS[@]}"
+
+      - name: Save results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs reports
+          if git diff --cached --quiet; then
+            echo "No changes to save."
+          else
+            git commit -m "Legislation scan $(TZ=America/Chicago date +%F)"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Post notifications as GitHub Issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for kind in update monthly; do
+            if [ -f "out/issue_${kind}_title.txt" ]; then
+              gh issue create --title "$(cat out/issue_${kind}_title.txt)" \
+                              --body-file "out/issue_${kind}_body.md"
+            fi
+          done
