@@ -1,0 +1,6294 @@
+{
+ "HB2007": {
+  "sig": "81|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 34,
+    "nay": 82,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0079",
+    "journal_page": 278
+   },
+   {
+    "date": "2025-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 40,
+    "nay": 76,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0080",
+    "journal_page": 279
+   },
+   {
+    "date": "2025-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Substitute passed as amended",
+    "yea": 83,
+    "nay": 36,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0083",
+    "journal_page": 284
+   },
+   {
+    "date": "2025-03-24",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action Substitute As Amended",
+    "action": "Emergency Final Action - Substitute passed as amended",
+    "yea": 27,
+    "nay": 13,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "163",
+    "journal_page": 329
+   },
+   {
+    "date": "2025-04-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 121,
+    "nay": 0,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0397",
+    "journal_page": 1526
+   },
+   {
+    "date": "2025-04-11",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "339",
+    "journal_page": 1290
+   }
+  ]
+ },
+ "HB2011": {
+  "sig": "8|2026-04-10",
+  "votes": []
+ },
+ "HB2015": {
+  "sig": "5|2025-02-20",
+  "votes": []
+ },
+ "HB2027": {
+  "sig": "22|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 37,
+    "nay": 84,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0050",
+    "journal_page": 226
+   },
+   {
+    "date": "2025-02-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 88,
+    "nay": 35,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0051",
+    "journal_page": 227
+   },
+   {
+    "date": "2025-03-12",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 31,
+    "nay": 8,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "121",
+    "journal_page": 290
+   }
+  ]
+ },
+ "HB2028": {
+  "sig": "29|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-03-06",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 111,
+    "nay": 11,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0185",
+    "journal_page": 397
+   },
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "224",
+    "journal_page": 412
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 65,
+    "nay": 59,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0371",
+    "journal_page": 1311
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "276",
+    "journal_page": 483
+   }
+  ]
+ },
+ "HB2036": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 113,
+    "nay": 11,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0280",
+    "journal_page": 2188
+   }
+  ]
+ },
+ "HB2037": {
+  "sig": "22|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-04",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 115,
+    "nay": 4,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0030",
+    "journal_page": 168
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "182",
+    "journal_page": 347
+   },
+   {
+    "date": "2025-03-25",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 119,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0310",
+    "journal_page": 634
+   }
+  ]
+ },
+ "HB2045": {
+  "sig": "33|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-02-07",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 104,
+    "nay": 10,
+    "present": 0,
+    "absent": 11,
+    "not_voting": 0,
+    "rcs_num": "0043",
+    "journal_page": 203
+   },
+   {
+    "date": "2025-03-13",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "133",
+    "journal_page": 298
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 30,
+    "nay": 10,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "332",
+    "journal_page": 1166
+   },
+   {
+    "date": "2025-04-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 99,
+    "nay": 23,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0389",
+    "journal_page": 1387
+   }
+  ]
+ },
+ "HB2048": {
+  "sig": "19|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-05",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 105,
+    "nay": 12,
+    "present": 0,
+    "absent": 8,
+    "not_voting": 0,
+    "rcs_num": "0033",
+    "journal_page": 183
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "168",
+    "journal_page": 344
+   }
+  ]
+ },
+ "HB2050": {
+  "sig": "26|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-07",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 114,
+    "nay": 0,
+    "present": 0,
+    "absent": 11,
+    "not_voting": 0,
+    "rcs_num": "0045",
+    "journal_page": 204
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "184",
+    "journal_page": 348
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 120,
+    "nay": 5,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0351",
+    "journal_page": 786
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "277",
+    "journal_page": 508
+   }
+  ]
+ },
+ "HB2063": {
+  "sig": "6|2026-02-19",
+  "votes": []
+ },
+ "HB2068": {
+  "sig": "25|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-02-14",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 119,
+    "nay": 0,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0064",
+    "journal_page": 246
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "169",
+    "journal_page": 344
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "298",
+    "journal_page": null
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 107,
+    "nay": 18,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0326",
+    "journal_page": 2342
+   }
+  ]
+ },
+ "HB2075": {
+  "sig": "28|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 119,
+    "nay": 0,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0087",
+    "journal_page": 287
+   },
+   {
+    "date": "2025-03-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "153",
+    "journal_page": 327
+   },
+   {
+    "date": "2025-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 38,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "261",
+    "journal_page": 446
+   },
+   {
+    "date": "2025-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0327",
+    "journal_page": 677
+   }
+  ]
+ },
+ "HB2081": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "HB2095": {
+  "sig": "6|2025-02-20",
+  "votes": []
+ },
+ "HB2098": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "HB2110": {
+  "sig": "21|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 119,
+    "nay": 0,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0070",
+    "journal_page": 260
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "174",
+    "journal_page": 350
+   },
+   {
+    "date": "2025-03-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 118,
+    "nay": 0,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0296",
+    "journal_page": 607
+   }
+  ]
+ },
+ "HB2111": {
+  "sig": "44|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 115,
+    "nay": 8,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0202",
+    "journal_page": 424
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action Substitute As Amended",
+    "action": "Emergency Final Action - Substitute passed as amended",
+    "yea": 26,
+    "nay": 14,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "276",
+    "journal_page": 1753
+   },
+   {
+    "date": "2026-04-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 71,
+    "nay": 49,
+    "present": 0,
+    "absent": 5,
+    "not_voting": 0,
+    "rcs_num": "0434",
+    "journal_page": 3248
+   },
+   {
+    "date": "2026-04-10",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 27,
+    "nay": 13,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "389",
+    "journal_page": 2739
+   }
+  ]
+ },
+ "HB2113": {
+  "sig": "14|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 106,
+    "nay": 15,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0111",
+    "journal_page": 305
+   }
+  ]
+ },
+ "HB2131": {
+  "sig": "21|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 108,
+    "nay": 10,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0286",
+    "journal_page": 601
+   }
+  ]
+ },
+ "HB2149": {
+  "sig": "28|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-03-13",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Substitute passed as amended",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0226",
+    "journal_page": 455
+   },
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "217",
+    "journal_page": 415
+   },
+   {
+    "date": "2025-03-24",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0305",
+    "journal_page": 628
+   }
+  ]
+ },
+ "HB2164": {
+  "sig": "31|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 97,
+    "nay": 24,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0115",
+    "journal_page": 307
+   },
+   {
+    "date": "2025-03-24",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action Substitute",
+    "action": "Emergency Final Action - Substitute passed",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "218",
+    "journal_page": 417
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 36,
+    "nay": 4,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "298",
+    "journal_page": 984
+   },
+   {
+    "date": "2026-03-28",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 24,
+    "nay": 13,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "370",
+    "journal_page": null
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report not adopted",
+    "yea": 40,
+    "nay": 83,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0397",
+    "journal_page": 3183
+   }
+  ]
+ },
+ "HB2166": {
+  "sig": "14|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 121,
+    "nay": 0,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0116",
+    "journal_page": 308
+   },
+   {
+    "date": "2025-03-12",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Consent Calendar Passed",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "128",
+    "journal_page": 290
+   }
+  ]
+ },
+ "HB2179": {
+  "sig": "5|2025-02-20",
+  "votes": []
+ },
+ "HB2180": {
+  "sig": "5|2026-02-19",
+  "votes": []
+ },
+ "HB2183": {
+  "sig": "29|2026-02-06",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 119,
+    "nay": 3,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0119",
+    "journal_page": 309
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "176",
+    "journal_page": 352
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 30,
+    "nay": 10,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "302",
+    "journal_page": 988
+   },
+   {
+    "date": "2026-01-22",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 83,
+    "nay": 39,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0012",
+    "journal_page": 1634
+   }
+  ]
+ },
+ "HB2185": {
+  "sig": "19|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 112,
+    "nay": 6,
+    "present": 1,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0076",
+    "journal_page": 264
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "172",
+    "journal_page": 345
+   }
+  ]
+ },
+ "HB2206": {
+  "sig": "25|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-14",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 74,
+    "nay": 45,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0062",
+    "journal_page": 245
+   },
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "241",
+    "journal_page": 419
+   },
+   {
+    "date": "2025-03-24",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 78,
+    "nay": 44,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0306",
+    "journal_page": 628
+   }
+  ]
+ },
+ "HB2214": {
+  "sig": "25|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-17",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 34,
+    "nay": 80,
+    "present": 0,
+    "absent": 11,
+    "not_voting": 0,
+    "rcs_num": "0080",
+    "journal_page": 1882
+   },
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 81,
+    "nay": 43,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0084",
+    "journal_page": 1930
+   }
+  ]
+ },
+ "HB2218": {
+  "sig": "7|2026-02-19",
+  "votes": []
+ },
+ "HB2223": {
+  "sig": "27|2026-03-13",
+  "votes": [
+   {
+    "date": "2025-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 97,
+    "nay": 24,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0248",
+    "journal_page": 530
+   },
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 34,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "82",
+    "journal_page": 1516
+   },
+   {
+    "date": "2026-02-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 98,
+    "nay": 23,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0208",
+    "journal_page": 2033
+   }
+  ]
+ },
+ "HB2234": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "HB2236": {
+  "sig": "7|2026-04-10",
+  "votes": []
+ },
+ "HB2237": {
+  "sig": "18|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 122,
+    "nay": 1,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0258",
+    "journal_page": 546
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 29,
+    "nay": 11,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "194",
+    "journal_page": 1731
+   }
+  ]
+ },
+ "HB2250": {
+  "sig": "26|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Substitute passed",
+    "yea": 120,
+    "nay": 1,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0136",
+    "journal_page": 1974
+   },
+   {
+    "date": "2026-03-13",
+    "chamber": "Senate",
+    "motion": "Final Action Substitute Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "161",
+    "journal_page": 1653
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "303",
+    "journal_page": null
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 124,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0327",
+    "journal_page": 2352
+   }
+  ]
+ },
+ "HB2270": {
+  "sig": "9|2026-02-19",
+  "votes": []
+ },
+ "HB2271": {
+  "sig": "12|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0147",
+    "journal_page": 329
+   }
+  ]
+ },
+ "HB2274": {
+  "sig": "25|2026-03-13",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 121,
+    "nay": 1,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0128",
+    "journal_page": 315
+   },
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "83",
+    "journal_page": 1516
+   },
+   {
+    "date": "2026-02-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 121,
+    "nay": 0,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0209",
+    "journal_page": 2033
+   }
+  ]
+ },
+ "HB2291": {
+  "sig": "28|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-02-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 90,
+    "nay": 28,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0171",
+    "journal_page": 357
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "190",
+    "journal_page": 355
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 88,
+    "nay": 37,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0375",
+    "journal_page": 1348
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 30,
+    "nay": 10,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "325",
+    "journal_page": 1097
+   }
+  ]
+ },
+ "HB2294": {
+  "sig": "19|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Substitute passed",
+    "yea": 103,
+    "nay": 15,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0287",
+    "journal_page": 601
+   }
+  ]
+ },
+ "HB2313": {
+  "sig": "29|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-03-07",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 95,
+    "nay": 27,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0190",
+    "journal_page": 404
+   },
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action Substitute",
+    "action": "Emergency Final Action - Substitute passed",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "243",
+    "journal_page": 421
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments in conference",
+    "yea": 87,
+    "nay": 38,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0345",
+    "journal_page": null
+   }
+  ]
+ },
+ "HB2334": {
+  "sig": "30|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 113,
+    "nay": 10,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0137",
+    "journal_page": 320
+   },
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "232",
+    "journal_page": 422
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 123,
+    "nay": 1,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0366",
+    "journal_page": 1260
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "299",
+    "journal_page": 1047
+   }
+  ]
+ },
+ "HB2336": {
+  "sig": "18|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 109,
+    "nay": 9,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0281",
+    "journal_page": 598
+   }
+  ]
+ },
+ "HB2343": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 74,
+    "nay": 49,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0141",
+    "journal_page": 323
+   }
+  ]
+ },
+ "HB2349": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-13",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 120,
+    "nay": 3,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0224",
+    "journal_page": 454
+   }
+  ]
+ },
+ "HB2359": {
+  "sig": "22|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 89,
+    "nay": 34,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0160",
+    "journal_page": 336
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "198",
+    "journal_page": 357
+   }
+  ]
+ },
+ "HB2364": {
+  "sig": "10|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 123,
+    "nay": 1,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0086",
+    "journal_page": 1932
+   }
+  ]
+ },
+ "HB2365": {
+  "sig": "33|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 121,
+    "nay": 2,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0142",
+    "journal_page": 323
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "210",
+    "journal_page": 357
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 76,
+    "nay": 49,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0363",
+    "journal_page": 2887
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 34,
+    "nay": 5,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "323",
+    "journal_page": 1959
+   }
+  ]
+ },
+ "HB2366": {
+  "sig": "13|2026-02-19",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Not passed",
+    "yea": 58,
+    "nay": 58,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0193",
+    "journal_page": 2011
+   }
+  ]
+ },
+ "HB2368": {
+  "sig": "13|2026-04-10",
+  "votes": []
+ },
+ "HB2371": {
+  "sig": "25|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 112,
+    "nay": 11,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0143",
+    "journal_page": 324
+   },
+   {
+    "date": "2025-03-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "158",
+    "journal_page": 329
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 120,
+    "nay": 4,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0369",
+    "journal_page": 1307
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "305",
+    "journal_page": 1070
+   }
+  ]
+ },
+ "HB2372": {
+  "sig": "28|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-03-05",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 118,
+    "nay": 0,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0183",
+    "journal_page": 383
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Substitute passed",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "198",
+    "journal_page": 1733
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 85,
+    "nay": 39,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0368",
+    "journal_page": 2930
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 30,
+    "nay": 9,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "329",
+    "journal_page": 1968
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 85,
+    "nay": 38,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0407",
+    "journal_page": 3196
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "384",
+    "journal_page": 2592
+   }
+  ]
+ },
+ "HB2374": {
+  "sig": "19|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 119,
+    "nay": 5,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0087",
+    "journal_page": 1932
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "199",
+    "journal_page": 1733
+   }
+  ]
+ },
+ "HB2376": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "HB2392": {
+  "sig": "11|2026-04-10",
+  "votes": []
+ },
+ "HB2402": {
+  "sig": "24|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 98,
+    "nay": 24,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0243",
+    "journal_page": 526
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Final Action Substitute",
+    "action": "Emergency Final Action - Substitute passed",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "268",
+    "journal_page": 1754
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 91,
+    "nay": 33,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0384",
+    "journal_page": 3080
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "352",
+    "journal_page": null
+   }
+  ]
+ },
+ "HB2424": {
+  "sig": "6|2026-02-19",
+  "votes": []
+ },
+ "HB2427": {
+  "sig": "17|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-04",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Substitute passed as amended",
+    "yea": 85,
+    "nay": 34,
+    "present": 0,
+    "absent": 5,
+    "not_voting": 0,
+    "rcs_num": "0216",
+    "journal_page": 2062
+   }
+  ]
+ },
+ "HB2434": {
+  "sig": "19|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-25",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 44,
+    "nay": 71,
+    "present": 0,
+    "absent": 10,
+    "not_voting": 0,
+    "rcs_num": "0202",
+    "journal_page": 2024
+   },
+   {
+    "date": "2026-02-25",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 48,
+    "nay": 69,
+    "present": 0,
+    "absent": 8,
+    "not_voting": 0,
+    "rcs_num": "0203",
+    "journal_page": 2025
+   },
+   {
+    "date": "2026-02-25",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 52,
+    "nay": 64,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0204",
+    "journal_page": 2026
+   },
+   {
+    "date": "2026-02-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Substitute passed",
+    "yea": 68,
+    "nay": 53,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0206",
+    "journal_page": 2030
+   }
+  ]
+ },
+ "HB2444": {
+  "sig": "24|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 88,
+    "nay": 36,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0092",
+    "journal_page": 1935
+   },
+   {
+    "date": "2026-03-23",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 85,
+    "nay": 37,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0301",
+    "journal_page": 2223
+   },
+   {
+    "date": "2026-03-23",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 34,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "205",
+    "journal_page": 1736
+   }
+  ]
+ },
+ "HB2460": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 97,
+    "nay": 27,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0095",
+    "journal_page": 1938
+   }
+  ]
+ },
+ "HB2464": {
+  "sig": "25|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-04",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 81,
+    "nay": 39,
+    "present": 0,
+    "absent": 5,
+    "not_voting": 0,
+    "rcs_num": "0034",
+    "journal_page": 1725
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "207",
+    "journal_page": 1737
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 33,
+    "nay": 7,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "304",
+    "journal_page": null
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 98,
+    "nay": 26,
+    "present": 1,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0332",
+    "journal_page": 2415
+   }
+  ]
+ },
+ "HB2466": {
+  "sig": "24|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 93,
+    "nay": 28,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0051",
+    "journal_page": 1781
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 34,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "269",
+    "journal_page": 1754
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 78,
+    "nay": 44,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0381",
+    "journal_page": 3029
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 30,
+    "nay": 10,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "354",
+    "journal_page": 2503
+   }
+  ]
+ },
+ "HB2475": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "HB2479": {
+  "sig": "25|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-12",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 118,
+    "nay": 1,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0063",
+    "journal_page": 1796
+   },
+   {
+    "date": "2026-03-10",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "138",
+    "journal_page": 1630
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0365",
+    "journal_page": 2912
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "324",
+    "journal_page": 1989
+   }
+  ]
+ },
+ "HB2485": {
+  "sig": "27|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 123,
+    "nay": 1,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0099",
+    "journal_page": 1940
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 25,
+    "nay": 15,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "259",
+    "journal_page": 1755
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0374",
+    "journal_page": 2955
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "341",
+    "journal_page": 2518
+   }
+  ]
+ },
+ "HB2505": {
+  "sig": "25|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0105",
+    "journal_page": 1944
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "214",
+    "journal_page": 1739
+   }
+  ]
+ },
+ "HB2507": {
+  "sig": "24|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 122,
+    "nay": 2,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0106",
+    "journal_page": 1945
+   },
+   {
+    "date": "2026-03-13",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 2,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "165",
+    "journal_page": 1655
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 120,
+    "nay": 4,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0339",
+    "journal_page": 2437
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 29,
+    "nay": 11,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "309",
+    "journal_page": 1999
+   }
+  ]
+ },
+ "HB2518": {
+  "sig": "27|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0108",
+    "journal_page": 1946
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "217",
+    "journal_page": 1740
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0386",
+    "journal_page": 3098
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "355",
+    "journal_page": 2524
+   }
+  ]
+ },
+ "HB2519": {
+  "sig": "15|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 120,
+    "nay": 2,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0143",
+    "journal_page": 1978
+   },
+   {
+    "date": "2026-03-17",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Consent Calendar Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "176",
+    "journal_page": 1683
+   }
+  ]
+ },
+ "HB2520": {
+  "sig": "20|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 90,
+    "nay": 32,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0144",
+    "journal_page": 1979
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "218",
+    "journal_page": 1740
+   }
+  ]
+ },
+ "HB2521": {
+  "sig": "33|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 84,
+    "nay": 38,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0145",
+    "journal_page": 1979
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "270",
+    "journal_page": 1755
+   },
+   {
+    "date": "2026-03-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 83,
+    "nay": 38,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0390",
+    "journal_page": 3110
+   },
+   {
+    "date": "2026-03-28",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "362",
+    "journal_page": 2525
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 87,
+    "nay": 36,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0409",
+    "journal_page": 3198
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 30,
+    "nay": 9,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "387",
+    "journal_page": 2593
+   }
+  ]
+ },
+ "HB2527": {
+  "sig": "27|2026-03-26",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 109,
+    "nay": 13,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0148",
+    "journal_page": 1981
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 38,
+    "nay": 0,
+    "present": 2,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "271",
+    "journal_page": 1756
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "300",
+    "journal_page": null
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report not adopted",
+    "yea": 46,
+    "nay": 75,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0345",
+    "journal_page": 2480
+   }
+  ]
+ },
+ "HB2528": {
+  "sig": "38|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 88,
+    "nay": 34,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0149",
+    "journal_page": 1982
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 34,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "272",
+    "journal_page": 1756
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 87,
+    "nay": 38,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0335",
+    "journal_page": 2427
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "310",
+    "journal_page": 2329
+   }
+  ]
+ },
+ "HB2534": {
+  "sig": "26|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 121,
+    "nay": 0,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0055",
+    "journal_page": 1784
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "220",
+    "journal_page": 1741
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0375",
+    "journal_page": 2969
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "342",
+    "journal_page": 2536
+   }
+  ]
+ },
+ "HB2535": {
+  "sig": "26|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 98,
+    "nay": 18,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0194",
+    "journal_page": 2011
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "221",
+    "journal_page": 1741
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to not adopt Conference Committee Report passed;  (Bill is killed)",
+    "yea": 107,
+    "nay": 14,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0443",
+    "journal_page": 3377
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 30,
+    "nay": 8,
+    "present": 1,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "407",
+    "journal_page": 2766
+   }
+  ]
+ },
+ "HB2537": {
+  "sig": "20|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0111",
+    "journal_page": 1947
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "223",
+    "journal_page": 1742
+   }
+  ]
+ },
+ "HB2555": {
+  "sig": "17|2026-03-23",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0112",
+    "journal_page": 1948
+   },
+   {
+    "date": "2026-03-10",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Consent Calendar Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "139",
+    "journal_page": 1628
+   }
+  ]
+ },
+ "HB2558": {
+  "sig": "5|2026-02-19",
+  "votes": []
+ },
+ "HB2573": {
+  "sig": "22|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0157",
+    "journal_page": 1986
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "260",
+    "journal_page": 1757
+   },
+   {
+    "date": "2026-03-24",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0304",
+    "journal_page": 2250
+   }
+  ]
+ },
+ "HB2574": {
+  "sig": "18|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 121,
+    "nay": 1,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0158",
+    "journal_page": 1987
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "231",
+    "journal_page": 1744
+   }
+  ]
+ },
+ "HB2582": {
+  "sig": "6|2026-02-19",
+  "votes": []
+ },
+ "HB2584": {
+  "sig": "6|2026-02-19",
+  "votes": []
+ },
+ "HB2588": {
+  "sig": "17|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 113,
+    "nay": 9,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0159",
+    "journal_page": 1987
+   }
+  ]
+ },
+ "HB2590": {
+  "sig": "23|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 123,
+    "nay": 1,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0115",
+    "journal_page": 1950
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "233",
+    "journal_page": 1745
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "301",
+    "journal_page": 1906
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 125,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0330",
+    "journal_page": 2413
+   }
+  ]
+ },
+ "HB2591": {
+  "sig": "26|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0116",
+    "journal_page": 1950
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "234",
+    "journal_page": 1745
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0340",
+    "journal_page": 2445
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "312",
+    "journal_page": 2352
+   }
+  ]
+ },
+ "HB2594": {
+  "sig": "24|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0117",
+    "journal_page": 1951
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "236",
+    "journal_page": 1746
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 36,
+    "nay": 4,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "356",
+    "journal_page": 2548
+   }
+  ]
+ },
+ "HB2602": {
+  "sig": "21|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 103,
+    "nay": 21,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0118",
+    "journal_page": 1951
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "238",
+    "journal_page": 1746
+   },
+   {
+    "date": "2026-03-23",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 101,
+    "nay": 21,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0298",
+    "journal_page": 2222
+   }
+  ]
+ },
+ "HB2605": {
+  "sig": "20|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0121",
+    "journal_page": 1953
+   },
+   {
+    "date": "2026-03-13",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "168",
+    "journal_page": 1655
+   }
+  ]
+ },
+ "HB2613": {
+  "sig": "25|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 112,
+    "nay": 4,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0195",
+    "journal_page": 2012
+   },
+   {
+    "date": "2026-03-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "262",
+    "journal_page": 1758
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments in conference",
+    "yea": 96,
+    "nay": 27,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0373",
+    "journal_page": 2953
+   }
+  ]
+ },
+ "HB2618": {
+  "sig": "17|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 102,
+    "nay": 20,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0164",
+    "journal_page": 1990
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "241",
+    "journal_page": 1747
+   }
+  ]
+ },
+ "HB2639": {
+  "sig": "21|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 116,
+    "nay": 0,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0188",
+    "journal_page": 2008
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "244",
+    "journal_page": 1748
+   }
+  ]
+ },
+ "HB2642": {
+  "sig": "12|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0083",
+    "journal_page": 1930
+   }
+  ]
+ },
+ "HB2645": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "HB2653": {
+  "sig": "22|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-16",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0069",
+    "journal_page": 1815
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "245",
+    "journal_page": 1748
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments in conference",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0372",
+    "journal_page": 2953
+   }
+  ]
+ },
+ "HB2676": {
+  "sig": "12|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 95,
+    "nay": 27,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0169",
+    "journal_page": 1993
+   }
+  ]
+ },
+ "HB2700": {
+  "sig": "25|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 122,
+    "nay": 2,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0126",
+    "journal_page": 1956
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "246",
+    "journal_page": 1749
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "302",
+    "journal_page": null
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 123,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0331",
+    "journal_page": 2414
+   }
+  ]
+ },
+ "HB2702": {
+  "sig": "17|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 120,
+    "nay": 2,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0171",
+    "journal_page": 1995
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "186",
+    "journal_page": 1714
+   }
+  ]
+ },
+ "HB2703": {
+  "sig": "12|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 87,
+    "nay": 35,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0172",
+    "journal_page": 1995
+   }
+  ]
+ },
+ "HB2717": {
+  "sig": "7|2026-02-19",
+  "votes": []
+ },
+ "HB2719": {
+  "sig": "22|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 121,
+    "nay": 0,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0135",
+    "journal_page": 1974
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "247",
+    "journal_page": 1749
+   },
+   {
+    "date": "2026-03-24",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0305",
+    "journal_page": 2251
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 89,
+    "nay": 34,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0400",
+    "journal_page": 3190
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 38,
+    "nay": 1,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "381",
+    "journal_page": 2595
+   }
+  ]
+ },
+ "HB2729": {
+  "sig": "18|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 87,
+    "nay": 37,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0128",
+    "journal_page": 1957
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "249",
+    "journal_page": 1750
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 87,
+    "nay": 36,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0402",
+    "journal_page": 3192
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 31,
+    "nay": 8,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "382",
+    "journal_page": 2595
+   }
+  ]
+ },
+ "HB2731": {
+  "sig": "31|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Substitute passed",
+    "yea": 85,
+    "nay": 37,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0173",
+    "journal_page": 1996
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "250",
+    "journal_page": 1751
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 80,
+    "nay": 43,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0376",
+    "journal_page": 2981
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 28,
+    "nay": 11,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "343",
+    "journal_page": 2576
+   },
+   {
+    "date": "2026-04-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 84,
+    "nay": 39,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0430",
+    "journal_page": 3225
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 29,
+    "nay": 10,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "399",
+    "journal_page": 2609
+   }
+  ]
+ },
+ "HB2732": {
+  "sig": "10|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 119,
+    "nay": 3,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0174",
+    "journal_page": 1997
+   }
+  ]
+ },
+ "HB2737": {
+  "sig": "20|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 110,
+    "nay": 14,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0129",
+    "journal_page": 1958
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 34,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "187",
+    "journal_page": 1714
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Concurred with amendments",
+    "yea": 121,
+    "nay": 3,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0292",
+    "journal_page": 2203
+   }
+  ]
+ },
+ "HB2738": {
+  "sig": "12|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 72,
+    "nay": 50,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0176",
+    "journal_page": 1998
+   }
+  ]
+ },
+ "HB2757": {
+  "sig": "7|2026-04-10",
+  "votes": []
+ },
+ "HB2760": {
+  "sig": "24|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0179",
+    "journal_page": 1999
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "252",
+    "journal_page": 1751
+   }
+  ]
+ },
+ "HB2761": {
+  "sig": "18|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 121,
+    "nay": 1,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0180",
+    "journal_page": 2000
+   },
+   {
+    "date": "2026-03-17",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "180",
+    "journal_page": 1686
+   }
+  ]
+ },
+ "HB2763": {
+  "sig": "37|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 116,
+    "nay": 0,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0185",
+    "journal_page": 2006
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "188",
+    "journal_page": 1714
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 74,
+    "nay": 47,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0441",
+    "journal_page": 3373
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 29,
+    "nay": 10,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "404",
+    "journal_page": 2770
+   }
+  ]
+ },
+ "HB2765": {
+  "sig": "7|2026-02-19",
+  "votes": []
+ },
+ "HB2793": {
+  "sig": "17|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-17",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 79,
+    "nay": 41,
+    "present": 0,
+    "absent": 5,
+    "not_voting": 0,
+    "rcs_num": "0266",
+    "journal_page": 2155
+   }
+  ]
+ },
+ "HCR5008": {
+  "sig": "21|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Adopted as amended by Required 2/3 Majority",
+    "yea": 86,
+    "nay": 37,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0149",
+    "journal_page": 330
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to concur with amendments failed",
+    "yea": 59,
+    "nay": 62,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0442",
+    "journal_page": 3376
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Adopted as amended by Required 2/3 Majority",
+    "yea": 27,
+    "nay": 12,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "405",
+    "journal_page": 2610
+   }
+  ]
+ },
+ "HR6036": {
+  "sig": "3|2026-03-16",
+  "votes": []
+ },
+ "HR6039": {
+  "sig": "3|2026-03-24",
+  "votes": []
+ },
+ "HR6043": {
+  "sig": "3|2026-04-09",
+  "votes": []
+ },
+ "HR6044": {
+  "sig": "3|2026-04-09",
+  "votes": []
+ },
+ "SB125": {
+  "sig": "31|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-02-11",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Consent Calendar Passed",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "34",
+    "journal_page": 133
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 120,
+    "nay": 3,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0259",
+    "journal_page": 546
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 89,
+    "nay": 36,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0352",
+    "journal_page": 802
+   },
+   {
+    "date": "2025-03-28",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 24,
+    "nay": 16,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "310",
+    "journal_page": 964
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override line item veto failed; Line item veto  sustained",
+    "yea": 82,
+    "nay": 42,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0386",
+    "journal_page": 1374
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "Senate",
+    "motion": "Override Line Item",
+    "action": "Motion to override line item veto prevailed; Line item veto  overridden",
+    "yea": 30,
+    "nay": 10,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "318",
+    "journal_page": 1088
+   },
+   {
+    "date": "2025-04-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override line item veto prevailed; Line item veto  overridden",
+    "yea": 88,
+    "nay": 34,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0388",
+    "journal_page": 1386
+   }
+  ]
+ },
+ "SB14": {
+  "sig": "26|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-06",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 31,
+    "nay": 8,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "25",
+    "journal_page": 119
+   },
+   {
+    "date": "2025-03-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 82,
+    "nay": 41,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0205",
+    "journal_page": 426
+   },
+   {
+    "date": "2025-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 81,
+    "nay": 41,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0247",
+    "journal_page": 529
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "164",
+    "journal_page": 358
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 85,
+    "nay": 39,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0383",
+    "journal_page": 1360
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "316",
+    "journal_page": 1076
+   }
+  ]
+ },
+ "SB175": {
+  "sig": "18|2025-03-24",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "107",
+    "journal_page": 205
+   },
+   {
+    "date": "2025-03-12",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 121,
+    "nay": 1,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0216",
+    "journal_page": 443
+   }
+  ]
+ },
+ "SB181": {
+  "sig": "14|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "246",
+    "journal_page": 410
+   }
+  ]
+ },
+ "SB184": {
+  "sig": "15|2026-03-20",
+  "votes": [
+   {
+    "date": "2026-01-28",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 2,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "23",
+    "journal_page": 1375
+   }
+  ]
+ },
+ "SB197": {
+  "sig": "45|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action Substitute As Amended",
+    "action": "Emergency Final Action - Substitute passed as amended",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "108",
+    "journal_page": 205
+   },
+   {
+    "date": "2026-02-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Substitute passed as amended",
+    "yea": 82,
+    "nay": 38,
+    "present": 0,
+    "absent": 5,
+    "not_voting": 0,
+    "rcs_num": "0211",
+    "journal_page": 2038
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 75,
+    "nay": 48,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0371",
+    "journal_page": 2950
+   }
+  ]
+ },
+ "SB20": {
+  "sig": "25|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "49",
+    "journal_page": 188
+   },
+   {
+    "date": "2025-03-07",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 100,
+    "nay": 21,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0195",
+    "journal_page": 408
+   },
+   {
+    "date": "2026-03-23",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 104,
+    "nay": 17,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0302",
+    "journal_page": 2225
+   },
+   {
+    "date": "2026-03-24",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "289",
+    "journal_page": null
+   }
+  ]
+ },
+ "SB210": {
+  "sig": "6|2026-04-10",
+  "votes": []
+ },
+ "SB229": {
+  "sig": "29|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "248",
+    "journal_page": 411
+   },
+   {
+    "date": "2026-03-12",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Substitute passed as amended",
+    "yea": 83,
+    "nay": 36,
+    "present": 0,
+    "absent": 5,
+    "not_voting": 0,
+    "rcs_num": "0241",
+    "journal_page": 2118
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 88,
+    "nay": 34,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0380",
+    "journal_page": 3013
+   }
+  ]
+ },
+ "SB24": {
+  "sig": "29|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "55",
+    "journal_page": 189
+   },
+   {
+    "date": "2025-03-13",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 106,
+    "nay": 17,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0230",
+    "journal_page": 457
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 76,
+    "nay": 48,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0359",
+    "journal_page": 1194
+   },
+   {
+    "date": "2025-04-11",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "333",
+    "journal_page": 1204
+   }
+  ]
+ },
+ "SB244": {
+  "sig": "55|2026-02-18",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "110",
+    "journal_page": 207
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 34,
+    "nay": 83,
+    "present": 0,
+    "absent": 8,
+    "not_voting": 0,
+    "rcs_num": "0019",
+    "journal_page": 1670
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 36,
+    "nay": 85,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0020",
+    "journal_page": 1671
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 36,
+    "nay": 86,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0021",
+    "journal_page": 1671
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 36,
+    "nay": 81,
+    "present": 0,
+    "absent": 8,
+    "not_voting": 0,
+    "rcs_num": "0022",
+    "journal_page": 1672
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 42,
+    "nay": 76,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0023",
+    "journal_page": 1673
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 38,
+    "nay": 77,
+    "present": 0,
+    "absent": 10,
+    "not_voting": 0,
+    "rcs_num": "0024",
+    "journal_page": 1673
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 34,
+    "nay": 82,
+    "present": 0,
+    "absent": 9,
+    "not_voting": 0,
+    "rcs_num": "0025",
+    "journal_page": 1674
+   },
+   {
+    "date": "2026-01-28",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Substitute passed as amended",
+    "yea": 87,
+    "nay": 36,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0026",
+    "journal_page": 1676
+   },
+   {
+    "date": "2026-01-29",
+    "chamber": "Senate",
+    "motion": "Concur",
+    "action": "Concurred with amendments",
+    "yea": 30,
+    "nay": 9,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "28",
+    "journal_page": 1374
+   },
+   {
+    "date": "2026-02-17",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "53",
+    "journal_page": 1486
+   },
+   {
+    "date": "2026-02-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 87,
+    "nay": 37,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0132",
+    "journal_page": 1959
+   }
+  ]
+ },
+ "SB250": {
+  "sig": "26|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was rejected",
+    "yea": 9,
+    "nay": 31,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "89",
+    "journal_page": 185
+   },
+   {
+    "date": "2025-02-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 36,
+    "nay": 4,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "100",
+    "journal_page": 207
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 97,
+    "nay": 26,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0264",
+    "journal_page": 549
+   },
+   {
+    "date": "2025-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 119,
+    "nay": 3,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0336",
+    "journal_page": 726
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "295",
+    "journal_page": 966
+   }
+  ]
+ },
+ "SB26": {
+  "sig": "6|2026-04-10",
+  "votes": []
+ },
+ "SB263": {
+  "sig": "28|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-10",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 38,
+    "nay": 1,
+    "present": 1,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "145",
+    "journal_page": 1631
+   }
+  ]
+ },
+ "SB27": {
+  "sig": "19|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "56",
+    "journal_page": 189
+   },
+   {
+    "date": "2025-03-17",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 100,
+    "nay": 22,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0235",
+    "journal_page": 508
+   }
+  ]
+ },
+ "SB284": {
+  "sig": "19|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 34,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "215",
+    "journal_page": 412
+   }
+  ]
+ },
+ "SB30": {
+  "sig": "33|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "58",
+    "journal_page": 190
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0261",
+    "journal_page": 547
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 86,
+    "nay": 38,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0354",
+    "journal_page": 1170
+   },
+   {
+    "date": "2026-02-16",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 89,
+    "nay": 35,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0070",
+    "journal_page": 1815
+   },
+   {
+    "date": "2026-03-24",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 30,
+    "nay": 10,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "286",
+    "journal_page": null
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 88,
+    "nay": 35,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0411",
+    "journal_page": 3202
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 30,
+    "nay": 9,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "373",
+    "journal_page": 2588
+   }
+  ]
+ },
+ "SB300": {
+  "sig": "25|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-11",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "38",
+    "journal_page": 1448
+   },
+   {
+    "date": "2026-03-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0235",
+    "journal_page": 2103
+   },
+   {
+    "date": "2026-04-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 121,
+    "nay": 0,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0436",
+    "journal_page": null
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "401",
+    "journal_page": 2632
+   }
+  ]
+ },
+ "SB303": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "96",
+    "journal_page": 1518
+   }
+  ]
+ },
+ "SB315": {
+  "sig": "61|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-05",
+    "chamber": "Senate",
+    "motion": "Final Action Substitute Amended",
+    "action": "Final Action - Substitute passed as amended",
+    "yea": 21,
+    "nay": 19,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "119",
+    "journal_page": 1591
+   }
+  ]
+ },
+ "SB317": {
+  "sig": "15|2026-03-20",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "61",
+    "journal_page": 1508
+   }
+  ]
+ },
+ "SB325": {
+  "sig": "24|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "62",
+    "journal_page": 1508
+   },
+   {
+    "date": "2026-03-12",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 105,
+    "nay": 13,
+    "present": 0,
+    "absent": 6,
+    "not_voting": 0,
+    "rcs_num": "0246",
+    "journal_page": 2122
+   },
+   {
+    "date": "2026-03-24",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 109,
+    "nay": 12,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0314",
+    "journal_page": 2275
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 33,
+    "nay": 7,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "294",
+    "journal_page": null
+   }
+  ]
+ },
+ "SB328": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-10",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Consent Calendar Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "35",
+    "journal_page": 1427
+   }
+  ]
+ },
+ "SB334": {
+  "sig": "18|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "97",
+    "journal_page": 1519
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 81,
+    "nay": 43,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0273",
+    "journal_page": 2184
+   }
+  ]
+ },
+ "SB340": {
+  "sig": "16|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-12",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "154",
+    "journal_page": 1648
+   }
+  ]
+ },
+ "SB344": {
+  "sig": "14|2026-03-20",
+  "votes": [
+   {
+    "date": "2026-02-11",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "47",
+    "journal_page": 1449
+   }
+  ]
+ },
+ "SB360": {
+  "sig": "29|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "107",
+    "journal_page": 1519
+   }
+  ]
+ },
+ "SB363": {
+  "sig": "24|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-06",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 25,
+    "nay": 12,
+    "present": 1,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "127",
+    "journal_page": 1601
+   }
+  ]
+ },
+ "SB368": {
+  "sig": "20|2026-03-27",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 33,
+    "nay": 7,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "66",
+    "journal_page": 1509
+   },
+   {
+    "date": "2026-03-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 87,
+    "nay": 36,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0230",
+    "journal_page": 2091
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 87,
+    "nay": 37,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0366",
+    "journal_page": 2887
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 30,
+    "nay": 9,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "333",
+    "journal_page": 2363
+   }
+  ]
+ },
+ "SB374": {
+  "sig": "25|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "98",
+    "journal_page": 1521
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 116,
+    "nay": 8,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0284",
+    "journal_page": 2190
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 121,
+    "nay": 0,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0348",
+    "journal_page": 2498
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "345",
+    "journal_page": null
+   }
+  ]
+ },
+ "SB375": {
+  "sig": "28|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 31,
+    "nay": 9,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "99",
+    "journal_page": 1522
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 84,
+    "nay": 40,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0269",
+    "journal_page": 2182
+   },
+   {
+    "date": "2026-03-25",
+    "chamber": "Senate",
+    "motion": "Concur",
+    "action": "Concurred with amendments in conference",
+    "yea": 32,
+    "nay": 8,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "295",
+    "journal_page": 1810
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Motion to override veto prevailed",
+    "yea": 87,
+    "nay": 36,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0413",
+    "journal_page": 3204
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 31,
+    "nay": 8,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "372",
+    "journal_page": 2589
+   }
+  ]
+ },
+ "SB379": {
+  "sig": "18|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "68",
+    "journal_page": 1511
+   }
+  ]
+ },
+ "SB382": {
+  "sig": "28|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-03-06",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 38,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "129",
+    "journal_page": 1602
+   },
+   {
+    "date": "2026-03-17",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 111,
+    "nay": 12,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0260",
+    "journal_page": 2149
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 83,
+    "nay": 40,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0343",
+    "journal_page": 2472
+   },
+   {
+    "date": "2026-03-28",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "359",
+    "journal_page": null
+   }
+  ]
+ },
+ "SB384": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-12",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 32,
+    "nay": 7,
+    "present": 1,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "156",
+    "journal_page": 1649
+   }
+  ]
+ },
+ "SB39": {
+  "sig": "17|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-03-21",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 28,
+    "nay": 12,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "245",
+    "journal_page": 410
+   }
+  ]
+ },
+ "SB390": {
+  "sig": "15|2026-03-20",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "70",
+    "journal_page": 1511
+   }
+  ]
+ },
+ "SB398": {
+  "sig": "22|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "86",
+    "journal_page": 1522
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0286",
+    "journal_page": 2191
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Concur",
+    "action": "Concurred with amendments in conference",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "326",
+    "journal_page": 1913
+   }
+  ]
+ },
+ "SB402": {
+  "sig": "18|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-25",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "111",
+    "journal_page": 1537
+   }
+  ]
+ },
+ "SB404": {
+  "sig": "15|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-10",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 33,
+    "nay": 7,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "146",
+    "journal_page": 1631
+   }
+  ]
+ },
+ "SB406": {
+  "sig": "14|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-12",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "157",
+    "journal_page": 1649
+   }
+  ]
+ },
+ "SB408": {
+  "sig": "21|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "73",
+    "journal_page": 1512
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0287",
+    "journal_page": 2192
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Concur",
+    "action": "Concurred with amendments in conference",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "327",
+    "journal_page": 1914
+   }
+  ]
+ },
+ "SB410": {
+  "sig": "19|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "88",
+    "journal_page": 1522
+   },
+   {
+    "date": "2026-03-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0237",
+    "journal_page": 2104
+   }
+  ]
+ },
+ "SB418": {
+  "sig": "26|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 35,
+    "nay": 5,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "75",
+    "journal_page": 1514
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 97,
+    "nay": 27,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0274",
+    "journal_page": 2184
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 117,
+    "nay": 5,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0344",
+    "journal_page": 2479
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 35,
+    "nay": 4,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "346",
+    "journal_page": null
+   }
+  ]
+ },
+ "SB42": {
+  "sig": "29|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "92",
+    "journal_page": 200
+   },
+   {
+    "date": "2025-03-17",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 102,
+    "nay": 20,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0238",
+    "journal_page": 509
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 124,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "0347",
+    "journal_page": 755
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "307",
+    "journal_page": 635
+   }
+  ]
+ },
+ "SB427": {
+  "sig": "17|2026-03-27",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "78",
+    "journal_page": 1515
+   },
+   {
+    "date": "2026-03-17",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0262",
+    "journal_page": 2150
+   }
+  ]
+ },
+ "SB429": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "SB437": {
+  "sig": "7|2026-04-10",
+  "votes": []
+ },
+ "SB44": {
+  "sig": "27|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 37,
+    "nay": 3,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "59",
+    "journal_page": 190
+   },
+   {
+    "date": "2025-03-20",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 77,
+    "nay": 41,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0290",
+    "journal_page": 603
+   },
+   {
+    "date": "2025-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 102,
+    "nay": 21,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0324",
+    "journal_page": 668
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "275",
+    "journal_page": 471
+   }
+  ]
+ },
+ "SB441": {
+  "sig": "7|2026-04-10",
+  "votes": []
+ },
+ "SB450": {
+  "sig": "12|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-02-19",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 33,
+    "nay": 6,
+    "present": 1,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "91",
+    "journal_page": 1524
+   }
+  ]
+ },
+ "SB452": {
+  "sig": "20|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-06",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 31,
+    "nay": 7,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "130",
+    "journal_page": 1603
+   }
+  ]
+ },
+ "SB459": {
+  "sig": "24|2026-04-09",
+  "votes": [
+   {
+    "date": "2026-02-18",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 33,
+    "nay": 7,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "81",
+    "journal_page": 1516
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 124,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0283",
+    "journal_page": 2189
+   },
+   {
+    "date": "2026-03-26",
+    "chamber": "Senate",
+    "motion": "Concur",
+    "action": "Concurred with amendments in conference",
+    "yea": 32,
+    "nay": 7,
+    "present": 1,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "307",
+    "journal_page": 1914
+   }
+  ]
+ },
+ "SB465": {
+  "sig": "5|2026-04-10",
+  "votes": []
+ },
+ "SB49": {
+  "sig": "8|2026-04-10",
+  "votes": []
+ },
+ "SB497": {
+  "sig": "19|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-05",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 33,
+    "nay": 5,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "123",
+    "journal_page": 1600
+   }
+  ]
+ },
+ "SB498": {
+  "sig": "17|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-10",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action As Amended",
+    "action": "Emergency Final Action - Passed as amended",
+    "yea": 38,
+    "nay": 1,
+    "present": 1,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "148",
+    "journal_page": 1632
+   }
+  ]
+ },
+ "SB51": {
+  "sig": "30|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 34,
+    "nay": 6,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "93",
+    "journal_page": 201
+   },
+   {
+    "date": "2026-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Substitute passed",
+    "yea": 123,
+    "nay": 1,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0268",
+    "journal_page": 2181
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "Senate",
+    "motion": "Concur",
+    "action": "Concurred with amendments in conference",
+    "yea": 38,
+    "nay": 1,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "377",
+    "journal_page": 2596
+   }
+  ]
+ },
+ "SB517": {
+  "sig": "11|2026-04-10",
+  "votes": [
+   {
+    "date": "2026-03-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 39,
+    "nay": 1,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "192",
+    "journal_page": 1731
+   }
+  ]
+ },
+ "SB52": {
+  "sig": "13|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 33,
+    "nay": 7,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "62",
+    "journal_page": 191
+   }
+  ]
+ },
+ "SB70": {
+  "sig": "15|2025-03-21",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 26,
+    "nay": 14,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "67",
+    "journal_page": 193
+   }
+  ]
+ },
+ "SB74": {
+  "sig": "7|2026-04-10",
+  "votes": []
+ },
+ "SB78": {
+  "sig": "19|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "70",
+    "journal_page": 194
+   },
+   {
+    "date": "2025-03-18",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 86,
+    "nay": 36,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0245",
+    "journal_page": 527
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "Senate",
+    "motion": "Concur",
+    "action": "Concurred with amendments",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "166",
+    "journal_page": 342
+   }
+  ]
+ },
+ "SB79": {
+  "sig": "28|2025-04-11",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action Amended",
+    "action": "Final Action - Passed as amended",
+    "yea": 29,
+    "nay": 11,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "71",
+    "journal_page": 194
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 65,
+    "nay": 58,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0265",
+    "journal_page": 550
+   },
+   {
+    "date": "2025-04-10",
+    "chamber": "Senate",
+    "motion": "Override",
+    "action": "Motion to override veto prevailed",
+    "yea": 29,
+    "nay": 11,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "317",
+    "journal_page": 1078
+   }
+  ]
+ },
+ "SB82": {
+  "sig": "40|2026-04-10",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "72",
+    "journal_page": 195
+   },
+   {
+    "date": "2025-03-12",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed as amended",
+    "yea": 122,
+    "nay": 0,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0213",
+    "journal_page": 441
+   },
+   {
+    "date": "2025-04-11",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 74,
+    "nay": 48,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0394",
+    "journal_page": 1475
+   },
+   {
+    "date": "2026-04-10",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 76,
+    "nay": 45,
+    "present": 0,
+    "absent": 4,
+    "not_voting": 0,
+    "rcs_num": "0439",
+    "journal_page": 3296
+   },
+   {
+    "date": "2026-04-11",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 36,
+    "nay": 2,
+    "present": 1,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "406",
+    "journal_page": 2617
+   }
+  ]
+ },
+ "SB88": {
+  "sig": "16|2025-03-24",
+  "votes": [
+   {
+    "date": "2025-02-19",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Final Action - Passed",
+    "yea": 40,
+    "nay": 0,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "75",
+    "journal_page": 196
+   },
+   {
+    "date": "2025-03-12",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Passed",
+    "yea": 121,
+    "nay": 1,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0214",
+    "journal_page": 442
+   }
+  ]
+ },
+ "SB89": {
+  "sig": "19|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-20",
+    "chamber": "Senate",
+    "motion": "Emergency Final Action",
+    "action": "Emergency Final Action - Passed",
+    "yea": 38,
+    "nay": 2,
+    "present": 0,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "103",
+    "journal_page": 203
+   },
+   {
+    "date": "2025-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Passed",
+    "yea": 123,
+    "nay": 0,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0270",
+    "journal_page": 552
+   }
+  ]
+ },
+ "SB9": {
+  "sig": "29|2025-04-10",
+  "votes": [
+   {
+    "date": "2025-02-06",
+    "chamber": "Senate",
+    "motion": "Final Action",
+    "action": "Consent Calendar Passed",
+    "yea": 39,
+    "nay": 0,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "24",
+    "journal_page": 119
+   },
+   {
+    "date": "2025-03-07",
+    "chamber": "House",
+    "motion": "",
+    "action": "Final Action - Substitute passed as amended",
+    "yea": 104,
+    "nay": 18,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0192",
+    "journal_page": 405
+   },
+   {
+    "date": "2025-03-26",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report was adopted",
+    "yea": 98,
+    "nay": 24,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0338",
+    "journal_page": 728
+   },
+   {
+    "date": "2025-03-27",
+    "chamber": "Senate",
+    "motion": "Adopt CCR",
+    "action": "Conference Committee Report was adopted",
+    "yea": 38,
+    "nay": 1,
+    "present": 1,
+    "absent": 0,
+    "not_voting": 0,
+    "rcs_num": "274",
+    "journal_page": 470
+   }
+  ]
+ },
+ "SCR1603": {
+  "sig": "40|2026-04-09",
+  "votes": [
+   {
+    "date": "2025-02-06",
+    "chamber": "Senate",
+    "motion": "Final Action Resolution",
+    "action": "Final Action - Adopted as amended by required 2/3 Majority",
+    "yea": 28,
+    "nay": 11,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "28",
+    "journal_page": 120
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Committee of the Whole - Amendment by  was adopted",
+    "yea": 77,
+    "nay": 41,
+    "present": 0,
+    "absent": 7,
+    "not_voting": 0,
+    "rcs_num": "0294",
+    "journal_page": 2205
+   },
+   {
+    "date": "2026-03-19",
+    "chamber": "House",
+    "motion": "",
+    "action": "Emergency Final Action - Adopted as amended by Required 2/3 Majority",
+    "yea": 84,
+    "nay": 40,
+    "present": 0,
+    "absent": 1,
+    "not_voting": 0,
+    "rcs_num": "0295",
+    "journal_page": 2206
+   },
+   {
+    "date": "2026-03-27",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report not adopted",
+    "yea": 59,
+    "nay": 63,
+    "present": 0,
+    "absent": 3,
+    "not_voting": 0,
+    "rcs_num": "0388",
+    "journal_page": 3106
+   },
+   {
+    "date": "2026-04-09",
+    "chamber": "House",
+    "motion": "",
+    "action": "Conference Committee Report not adopted",
+    "yea": 69,
+    "nay": 54,
+    "present": 0,
+    "absent": 2,
+    "not_voting": 0,
+    "rcs_num": "0412",
+    "journal_page": 3203
+   }
+  ]
+ },
+ "SR1729": {
+  "sig": "3|2026-03-13",
+  "votes": []
+ },
+ "SR1734": {
+  "sig": "3|2026-03-13",
+  "votes": []
+ }
+}

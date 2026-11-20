@@ -1,8 +1,8 @@
 {
  "special_session_active": false,
  "first_scan": "2026-11-20",
- "last_scan": "2026-11-20T10:27-06:00",
+ "last_scan": "2026-11-20T10:51-06:00",
  "last_mode": "Manual",
- "api_requests": 127,
+ "api_requests": 314,
  "config_hash": "8be1a37045ee"
 }
