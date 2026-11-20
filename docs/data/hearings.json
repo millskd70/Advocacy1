@@ -1,0 +1,991 @@
+{
+ "generated_at": "2026-11-20T08:38-06:00",
+ "topics": [
+  "Science",
+  "Technology",
+  "Angel Investors",
+  "R&D Tax Credits",
+  "Biotechnology",
+  "Bioscience",
+  "Biomanufacturing",
+  "Prescription Drug Pricing",
+  "340B",
+  "Prescription Drug Affordability"
+ ],
+ "hearings": [
+  {
+   "date": "2025-01-28",
+   "time": "8:30 AM",
+   "room": "546-S",
+   "chamber": "Senate",
+   "committee": "Committee on Commerce, Labor and Economic Development",
+   "description": "Hearing: Tuesday, January 28, 2025, 8:30 AM — Room 546-S",
+   "bills": [
+    "SB9"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb9/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-01-30",
+   "time": "1:30 PM",
+   "room": "159-S",
+   "chamber": "Senate",
+   "committee": "Committee on Legislative Modernization",
+   "description": "Hearing: Thursday, January 30, 2025, 1:30 PM — Room 159-S",
+   "bills": [
+    "SB51"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb51/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-03",
+   "time": "1:30 PM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Education",
+   "description": "Hearing: Monday, February 3, 2025, 1:30 PM — Room 218-N",
+   "bills": [
+    "HB2103"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2103/",
+   "topics": [
+    "Science"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-05",
+   "time": "1:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Public Health and Welfare",
+   "description": "Hearing: Wednesday, February 5, 2025, 1:30 PM — Room 112-N",
+   "bills": [
+    "HB2068"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2068/",
+   "topics": [
+    "Prescription Drug Pricing"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-06",
+   "time": "8:30 AM",
+   "room": "144-S",
+   "chamber": "Senate",
+   "committee": "Committee on Agriculture and Natural Resources",
+   "description": "Hearing: Thursday, February 6, 2025, 8:30 AM — Room 144-S",
+   "bills": [
+    "SB89"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb89/",
+   "topics": [
+    "Bioscience"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-11",
+   "time": "8:30 AM",
+   "room": "142-S",
+   "chamber": "Senate",
+   "committee": "Committee on Health and Human Services",
+   "description": "Hearing: Tuesday, February 11, 2025, 8:30 AM — Room 142-S",
+   "bills": [
+    "SB82"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb82/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-11",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Ways and Means",
+   "description": "Hearing: Tuesday, February 11, 2025, 9:00 AM — Room 218-N",
+   "bills": [
+    "HB2113"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2113/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-12",
+   "time": "9:00 AM",
+   "room": "582-N",
+   "chamber": "House",
+   "committee": "Committee on Financial Institutions and Pensions",
+   "description": "Hearing: Wednesday, February 12, 2025, 9:00 AM — Room 582-N — CANCELED",
+   "bills": [
+    "HB2235"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2235/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-12",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Legislative Modernization",
+   "description": "Hearing: Wednesday, February 12, 2025, 9:00 AM — Room 218-N — CANCELED",
+   "bills": [
+    "HB2270"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2270/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-12",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Federal and State Affairs",
+   "description": "Hearing: Wednesday, February 12, 2025, 9:00 AM — Room 218-N — CANCELED",
+   "bills": [
+    "HB2271"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2271/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-12",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Federal and State Affairs",
+   "description": "Hearing: Wednesday, February 12, 2025, 9:00 AM — Room 218-N — CANCELED",
+   "bills": [
+    "HB2313"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2313/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-13",
+   "time": "9:30 AM",
+   "room": "548-S",
+   "chamber": "Senate",
+   "committee": "Committee on Assessment and Taxation",
+   "description": "Hearing: Thursday, February 13, 2025, 9:30 AM — Room 548-S",
+   "bills": [
+    "SB74"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb74/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-14",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Financial Institutions and Pensions",
+   "description": "Hearing: Friday, February 14, 2025, 9:00 AM — Room 218-N",
+   "bills": [
+    "HB2235"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2235/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-17",
+   "time": "3:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Agriculture and Natural Resources",
+   "description": "Hearing: Monday, February 17, 2025, 3:30 PM — Room 112-N",
+   "bills": [
+    "HB2297"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2297/",
+   "topics": [
+    "Bioscience"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-17",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Legislative Modernization",
+   "description": "Hearing: Monday, February 17, 2025, 9:00 AM — Room 218-N",
+   "bills": [
+    "HB2270"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2270/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-17",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Federal and State Affairs",
+   "description": "Hearing: Monday, February 17, 2025, 9:00 AM — Room 218-N",
+   "bills": [
+    "HB2271"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2271/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-17",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Federal and State Affairs",
+   "description": "Hearing: Monday, February 17, 2025, 9:00 AM — Room 218-N",
+   "bills": [
+    "HB2313"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2313/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-25",
+   "time": "8:30 AM",
+   "room": "142-S",
+   "chamber": "Senate",
+   "committee": "Committee on Public Health and Welfare",
+   "description": "Hearing: Tuesday, February 25, 2025, 8:30 AM — Room 142-S",
+   "bills": [
+    "HB2068"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2068/",
+   "topics": [
+    "Prescription Drug Pricing"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-25",
+   "time": "9:08 AM",
+   "room": "346-S",
+   "chamber": "House",
+   "committee": "Committee on Commerce, Labor and Economic Development",
+   "description": "Hearing: Tuesday, February 25, 2025, 9:08 AM — Room 346-S",
+   "bills": [
+    "SB9"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb9/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-02-26",
+   "time": "1:30 PM",
+   "room": "346-S",
+   "chamber": "House",
+   "committee": "Committee on Commerce, Labor and Economic Development",
+   "description": "Hearing: Wednesday, February 26, 2025, 1:30 PM — Room 346-S",
+   "bills": [
+    "HB2293"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2293/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-03",
+   "time": "1:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Health and Human Services",
+   "description": "Hearing: Monday, March 3, 2025, 1:30 PM — Room 112-N",
+   "bills": [
+    "SB82"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb82/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-05",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Legislative Modernization",
+   "description": "Hearing: Wednesday, March 5, 2025, 9:00 AM — Room 218-N — CANCELED",
+   "bills": [
+    "HB2270"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2270/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-05",
+   "time": "9:30 AM",
+   "room": "548-S",
+   "chamber": "Senate",
+   "committee": "Committee on Assessment and Taxation",
+   "description": "Hearing: Wednesday, March 5, 2025, 9:30 AM — Room 548-S",
+   "bills": [
+    "SB283"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb283/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-06",
+   "time": "3:30 PM",
+   "room": "346-S",
+   "chamber": "House",
+   "committee": "Committee on Legislative Modernization",
+   "description": "Hearing: Thursday, March 6, 2025, 3:30 PM — Room 346-S",
+   "bills": [
+    "SB51"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb51/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-06",
+   "time": "3:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Agriculture and Natural Resources",
+   "description": "Hearing: Thursday, March 6, 2025, 3:30 PM — Room 112-N",
+   "bills": [
+    "SB89"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb89/",
+   "topics": [
+    "Bioscience"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-06",
+   "time": "9:30 AM",
+   "room": "548-S",
+   "chamber": "Senate",
+   "committee": "Committee on Assessment and Taxation",
+   "description": "Hearing continuation: Thursday, March 6, 2025, 9:30 AM — Room 548-S",
+   "bills": [
+    "SB283"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb283/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-10",
+   "time": "8:30 AM",
+   "room": "144-S",
+   "chamber": "Senate",
+   "committee": "Committee on Ways and Means",
+   "description": "Hearing: Monday, March 10, 2025, 8:30 AM — Room 144-S",
+   "bills": [
+    "HB2113"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2113/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-13",
+   "time": "10:30 AM",
+   "room": "144-S",
+   "chamber": "Senate",
+   "committee": "Committee on Federal and State Affairs",
+   "description": "Hearing: Thursday, March 13, 2025, 10:30 AM — Room 144-S",
+   "bills": [
+    "SB234"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb234/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-13",
+   "time": "9:30 AM",
+   "room": "546-S",
+   "chamber": "Senate",
+   "committee": "Committee on Financial Institutions and Insurance",
+   "description": "Hearing: Thursday, March 13, 2025, 9:30 AM — Room 546-S",
+   "bills": [
+    "SB282"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb282/",
+   "topics": [
+    "Angel Investors"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2025-03-17",
+   "time": "9:30 AM",
+   "room": "546-S",
+   "chamber": "Senate",
+   "committee": "Committee on Interstate Cooperation",
+   "description": "Hearing: Monday, March 17, 2025, 9:30 AM — Room 546-S",
+   "bills": [
+    "SB284"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb284/",
+   "topics": [
+    "Prescription Drug Pricing",
+    "340B"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-01-22",
+   "time": "9:00 AM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Ways and Means",
+   "description": "Hearing: Thursday, January 22, 2026, 9:00 AM — Room 112-N",
+   "bills": [
+    "HB2427"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2427/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-01-27",
+   "time": "1:30 PM",
+   "room": "346-S",
+   "chamber": "House",
+   "committee": "Committee on Assessment and Taxation",
+   "description": "Hearing: Tuesday, January 27, 2026, 1:30 PM — Room 346-S",
+   "bills": [
+    "HB2464"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2464/",
+   "topics": [
+    "Angel Investors"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-01-27",
+   "time": "8:30 AM",
+   "room": "144-S",
+   "chamber": "Senate",
+   "committee": "Committee on Agriculture and Natural Resources",
+   "description": "Hearing: Tuesday, January 27, 2026, 8:30 AM — Room 144-S",
+   "bills": [
+    "SB344"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb344/",
+   "topics": [
+    "Bioscience"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-01-28",
+   "time": "1:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Health and Human Services",
+   "description": "Hearing: Wednesday, January 28, 2026, 1:30 PM — Room 112-N — CANCELED",
+   "bills": [
+    "HB2506"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2506/",
+   "topics": [
+    "Science"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-02",
+   "time": "1:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Public Health and Welfare",
+   "description": "Hearing: Monday, February 2, 2026, 1:30 PM — Room 112-N",
+   "bills": [
+    "HB2364"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2364/",
+   "topics": [
+    "Prescription Drug Pricing"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-02",
+   "time": "1:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Health and Human Services",
+   "description": "Hearing: Monday, February 2, 2026, 1:30 PM — Room 112-N",
+   "bills": [
+    "HB2506"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2506/",
+   "topics": [
+    "Science"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-02",
+   "time": "3:30 PM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Health and Human Services",
+   "description": "Hearing: Monday, February 2, 2026, 3:30 PM — Room 218-N",
+   "bills": [
+    "HB2551"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2551/",
+   "topics": [
+    "Prescription Drug Pricing"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-02",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Government Efficiency",
+   "description": "Hearing: Monday, February 2, 2026, 9:00 AM — Room 218-N",
+   "bills": [
+    "HB2574"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2574/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-04",
+   "time": "3:30 PM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Interstate Cooperation",
+   "description": "Hearing: Wednesday, February 4, 2026, 3:30 PM — Room 218-N — CANCELED",
+   "bills": [
+    "HB2550"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2550/",
+   "topics": [
+    "Prescription Drug Pricing",
+    "340B"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-04",
+   "time": "9:00 AM",
+   "room": "582-N",
+   "chamber": "House",
+   "committee": "Committee on Financial Institutions and Insurance",
+   "description": "Hearing: Wednesday, February 4, 2026, 9:00 AM — Room 582-N",
+   "bills": [
+    "HB2591"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2591/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-09",
+   "time": "10:30 AM",
+   "room": "144-S",
+   "chamber": "Senate",
+   "committee": "Committee on Federal and State Affairs",
+   "description": "Hearing: Monday, February 9, 2026, 10:30 AM — Room 144-S",
+   "bills": [
+    "SB405"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb405/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-09",
+   "time": "9:00 AM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Legislative Modernization",
+   "description": "Hearing: Monday, February 9, 2026, 9:00 AM — Room 218-N",
+   "bills": [
+    "HB2592"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2592/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-10",
+   "time": "1:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Public Health and Welfare",
+   "description": "Hearing: Tuesday, February 10, 2026, 1:30 PM — Room 112-N",
+   "bills": [
+    "HB2676"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2676/",
+   "topics": [
+    "Prescription Drug Pricing"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-11",
+   "time": "1:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Health and Human Services",
+   "description": "Hearing: Wednesday, February 11, 2026, 1:30 PM — Room 112-N",
+   "bills": [
+    "HB2506"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2506/",
+   "topics": [
+    "Science"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-11",
+   "time": "9:30 AM",
+   "room": "546-S",
+   "chamber": "Senate",
+   "committee": "Committee on Financial Institutions and Pensions",
+   "description": "Hearing: Wednesday, February 11, 2026, 9:30 AM — Room 546-S",
+   "bills": [
+    "SB410"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb410/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-11",
+   "time": "9:30 AM",
+   "room": "548-S",
+   "chamber": "Senate",
+   "committee": "Committee on Taxation",
+   "description": "Hearing: Wednesday, February 11, 2026, 9:30 AM — Room 548-S",
+   "bills": [
+    "SB498"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb498/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-12",
+   "time": "1:30 PM",
+   "room": "346-S",
+   "chamber": "House",
+   "committee": "Committee on Taxation",
+   "description": "Hearing: Thursday, February 12, 2026, 1:30 PM — Room 346-S",
+   "bills": [
+    "HB2757"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2757/",
+   "topics": [
+    "Technology",
+    "Angel Investors"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-12",
+   "time": "1:30 PM",
+   "room": "159-S",
+   "chamber": "Senate",
+   "committee": "Committee on Commerce",
+   "description": "Hearing: Thursday, February 12, 2026, 1:30 PM — Room 159-S",
+   "bills": [
+    "SB429"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb429/",
+   "topics": [
+    "Angel Investors"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-16",
+   "time": "3:30 PM",
+   "room": "218-N",
+   "chamber": "House",
+   "committee": "Committee on Interstate Cooperation",
+   "description": "Hearing: Monday, February 16, 2026, 3:30 PM — Room 218-N",
+   "bills": [
+    "HB2550"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2550/",
+   "topics": [
+    "Prescription Drug Pricing",
+    "340B"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-26",
+   "time": "3:30 PM",
+   "room": "346-S",
+   "chamber": "House",
+   "committee": "Committee on Taxation",
+   "description": "Hearing: Thursday, February 26, 2026, 3:30 PM — Room 346-S",
+   "bills": [
+    "HB2757"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2757/",
+   "topics": [
+    "Technology",
+    "Angel Investors"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-02-26",
+   "time": "9:30 AM",
+   "room": "548-S",
+   "chamber": "Senate",
+   "committee": "Committee on Assessment and Taxation",
+   "description": "Hearing: Thursday, February 26, 2026, 9:30 AM — Room 548-S",
+   "bills": [
+    "HB2464"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2464/",
+   "topics": [
+    "Angel Investors"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-03-02",
+   "time": "3:30 PM",
+   "room": "346-S",
+   "chamber": "House",
+   "committee": "Committee on Taxation",
+   "description": "Hearing: Monday, March 2, 2026, 3:30 PM — Room 346-S",
+   "bills": [
+    "HB2645"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2645/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-03-02",
+   "time": "9:00 AM",
+   "room": "582-N",
+   "chamber": "House",
+   "committee": "Committee on Financial Institutions and Pensions",
+   "description": "Hearing: Monday, March 2, 2026, 9:00 AM — Room 582-N",
+   "bills": [
+    "SB410"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb410/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-03-04",
+   "time": "3:30 PM",
+   "room": "112-N",
+   "chamber": "House",
+   "committee": "Committee on Agriculture and Natural Resources",
+   "description": "Hearing: Wednesday, March 4, 2026, 3:30 PM — Room 112-N",
+   "bills": [
+    "SB344"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb344/",
+   "topics": [
+    "Bioscience"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-03-11",
+   "time": "9:30 AM",
+   "room": "546-S",
+   "chamber": "Senate",
+   "committee": "Committee on Financial Institutions and Insurance",
+   "description": "Hearing: Wednesday, March 11, 2026, 9:30 AM — Room 546-S",
+   "bills": [
+    "HB2591"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2591/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-03-12",
+   "time": "9:30 AM",
+   "room": "144-S",
+   "chamber": "Senate",
+   "committee": "Committee on Government Efficiency",
+   "description": "Hearing: Thursday, March 12, 2026, 9:30 AM — Room 144-S",
+   "bills": [
+    "HB2574"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2574/",
+   "topics": [
+    "Technology"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "date": "2026-03-12",
+   "time": "9:30 AM",
+   "room": "546-S",
+   "chamber": "Senate",
+   "committee": "Committee on Financial Institutions and Insurance",
+   "description": "Hearing: Thursday, March 12, 2026, 9:30 AM — Room 546-S",
+   "bills": [
+    "SB528"
+   ],
+   "source": "Bill history",
+   "url": "https://www.kslegislature.gov/li/b2025_26/measures/sb528/",
+   "topics": [
+    "Prescription Drug Pricing"
+   ],
+   "first_seen": "2026-11-20"
+  }
+ ]
+}
