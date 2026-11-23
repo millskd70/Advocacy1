@@ -1,6 +1,6 @@
-# Kansas legislation scan — 2026-11-20
+# Kansas legislation scan — 2026-11-23
 
-Scan type: **Manual** · Tracked items: **343**
+Scan type: **Weekly (out of session)** · Tracked items: **343**
 
 Full filterable list: https://millskd70.github.io/Advocacy1/
 
